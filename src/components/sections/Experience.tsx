@@ -1,6 +1,3 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import { Star } from "lucide-react";
 
 interface Review {
@@ -36,26 +33,46 @@ const REVIEWS = [
   }
 ];
 
-export default function Experience() {
-  const [reviews, setReviews] = useState<Review[]>(REVIEWS);
+async function getReviews(): Promise<Review[]> {
+  const PLACE_ID = process.env.GOOGLE_PLACE_ID || 'ChIJs5z-3xFC6IgRhC0kFfMyz20';
+  const API_KEY = process.env.GOOGLE_PLACES_API_KEY;
 
-  useEffect(() => {
-    async function fetchLiveReviews() {
-      try {
-        const response = await fetch('/api/reviews');
-        if (response.ok) {
-          const data = await response.json();
-          if (data.reviews && data.reviews.length > 0) {
-            setReviews(data.reviews);
-          }
-        }
-      } catch (error) {
-        console.error("실시간 구글 리뷰를 가져오는 데 실패했습니다. 기본 리뷰를 표시합니다.", error);
-      }
+  if (!API_KEY) {
+    return REVIEWS;
+  }
+
+  try {
+    const response = await fetch(
+      `https://maps.googleapis.com/maps/api/place/details/json?place_id=${PLACE_ID}&fields=reviews&key=${API_KEY}`,
+      { next: { revalidate: 86400 } }
+    );
+    const data = await response.json();
+
+    if (data.result && data.result.reviews) {
+      const fiveStarReviews = data.result.reviews
+        .filter((review: any) => review.rating === 5)
+        .sort((a: any, b: any) => b.time - a.time)
+        .slice(0, 3)
+        .map((review: any, index: number) => ({
+          id: index + 1,
+          name: review.author_name,
+          platform: "Google Review",
+          text: review.text,
+          rating: review.rating,
+          url: review.author_url || "https://www.google.com/maps/place/Modu+Ramen/@30.21855,-81.55465,15z"
+        }));
+
+      if (fiveStarReviews.length > 0) return fiveStarReviews;
     }
+  } catch (error) {
+    console.error("실시간 구글 리뷰를 가져오는 데 실패했습니다. 기본 리뷰를 표시합니다.", error);
+  }
 
-    fetchLiveReviews();
-  }, []);
+  return REVIEWS;
+}
+
+export default async function Experience() {
+  const reviews = await getReviews();
   return (
     <section className="py-24 md:py-32 bg-paper text-charcoal">
       <div className="container mx-auto px-6 max-w-7xl">
