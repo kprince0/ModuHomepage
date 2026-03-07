@@ -11,8 +11,8 @@ export default function Footer() {
         </p>
         
         <div className="flex gap-6 uppercase text-xs tracking-widest">
-          <a href="#" className="hover:text-gold transition-colors">Instagram</a>
-          <a href="#" className="hover:text-gold transition-colors">Yelp</a>
+          <a href="https://www.instagram.com/modu.ramen/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">Instagram</a>
+          <a href="https://www.yelp.com/biz/modu-ramen-jacksonville-2?uid=wVAVf_WzSa-HVUG-IdpUwg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">Yelp</a>
         </div>
       </div>
     </footer>
