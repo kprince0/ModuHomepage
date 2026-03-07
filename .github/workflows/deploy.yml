@@ -75,7 +75,6 @@ jobs:
         env:
           GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
           GOOGLE_PLACE_ID: ${{ secrets.GOOGLE_PLACE_ID }}
-          NEXT_PUBLIC_BASE_PATH: '/ModuHomepage'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

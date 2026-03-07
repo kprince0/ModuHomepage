@@ -3,8 +3,6 @@ const isGithubActions = process.env.GITHUB_ACTIONS || false;
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: isGithubActions ? "/ModuHomepage" : "",
-  assetPrefix: isGithubActions ? "/ModuHomepage/" : "",
   images: {
     unoptimized: true,
     remotePatterns: [
