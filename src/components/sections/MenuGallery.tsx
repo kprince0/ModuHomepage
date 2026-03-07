@@ -62,7 +62,7 @@ const menuItems = [
     category: "Soju Cocktail",
     name: "Caipirinha / Sunrise",
     description: "Refreshing Soju-based craft cocktails featuring vibrant citrus and tropical profiles.",
-    images: ["/images/menu/Soju Cocktail/caipirinha.png", "/images/menu/Soju Cocktail/sunrise.png"]
+    images: [`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Soju Cocktail/caipirinha.png`, `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Soju Cocktail/sunrise.png`]
   }
 ];
 
