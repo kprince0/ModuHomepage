@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #1A1A1A;
+  --color-gold: #D4AF37;
+  --color-paper: #F5F5DC;
+  
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: var(--font-playfair), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-charcoal);
+    color: var(--color-paper);
+    cursor: default;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
