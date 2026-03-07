@@ -8,55 +8,55 @@ const menuItems = [
     category: "Fusion Ramen",
     name: "Beef Bulgogi Ramen",
     description: "A rich fusion ramen featuring savory broth, topped with marinated beef bulgogi, soft-boiled egg, and fresh bok choy.",
-    image: "/images/menu/Pork Bulgogi.png"
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Pork Bulgogi.png`
   },
   {
     category: "Fusion Ramen",
     name: "Matcha Ramen",
     description: "Soy broth infused with Ceremonial Grade Matcha, chashu (pork), soy marinated egg, black garlic oil, and red ginger.",
-    image: "/images/menu/matcha-ramen.jpg"
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/matcha-ramen.jpg`
   },
   {
     category: "Entree",
     name: "BigBoss Beef Bulgogi Set",
     description: "A full pound of beef marinated in our signature house-made bulgogi sauce crafted from an original Korean recipe.",
-    image: "/images/menu/beef Bulgogi Set canva.png"
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/beef Bulgogi Set canva.png`
   },
   {
     category: "Appetizer",
     name: "K.F.C Modu Wings",
     description: "Authentic Korean Fried Chicken wings, crispy fried and tossed in a traditional Korean spicy sauce.",
-    image: "/images/menu/spicy modu wings.png"
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/spicy modu wings.png`
   },
   {
     category: "Classic Ramen",
     name: "Kimchi Tonkotsu",
     description: "Pork bone broth with chashu, soy marinated egg, black garlic oil, woodear mushroom, and nori seaweed.",
-    image: "/images/menu/Kimchi Tonkatsu.png"
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Kimchi Tonkatsu.png`
   },
   {
     category: "Classic Ramen",
     name: "Curry Tonkatsu",
     description: "Pork bone broth with Fried Ton-Ka-Tsu, soy marinated egg, shiitake mushroom, corn, menma, and scallions.",
-    image: "/images/menu/curry tonkatsu 1.jpg"
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/curry tonkatsu 1.jpg`
   },
   {
     category: "Fusion Ramen",
     name: "TanTanMen",
     description: "Pork bone broth with ground pork, menma, black garlic oil, peanut, corn, and bok choy.",
-    image: "/images/menu/TanTan.png"
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/TanTan.png`
   },
   {
     category: "Vegetarian",
     name: "Vegetable Ramen",
     description: "Creamy vegetable broth, tofu, menma, scallions, and woodear mushroom.",
-    image: "/images/menu/Veg.png"
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Veg.png`
   },
   {
     category: "BingSu",
     name: "Mango Cheese Cake / Tiramisu Bingsu",
     description: "Delicate shaved ice topped with your choice of sweet mango and cheesecake OR rich cocoa, espresso powder, and mascarpone cream.",
-    images: ["/images/menu/Bingsu/mango cheesecake.png", "/images/menu/Bingsu/Tiramisu.jpg"]
+    images: [`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Bingsu/mango cheesecake.png`, `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Bingsu/Tiramisu.jpg`]
   },
   {
     category: "Soju Cocktail",

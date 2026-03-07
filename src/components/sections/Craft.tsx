@@ -35,7 +35,7 @@ export default function Craft() {
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm group">
             <div className="absolute inset-0 bg-black/20 z-10 group-hover:bg-transparent transition-colors duration-700" />
             <Image
-              src="/images/Broth.jpg"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/Broth.jpg`}
               alt="The Awakening Broth"
               fill
               className="object-cover transition-all duration-1000 scale-105 group-hover:scale-100"

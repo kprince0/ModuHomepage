@@ -44,7 +44,7 @@ export default function Hero() {
       <div className="hero-bg absolute inset-0 z-0 bg-black">
         <div className="absolute inset-0 bg-charcoal/40 z-10" />
         <Image
-          src="/images/menu/Pork Bulgogi.png"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Pork Bulgogi.png`}
           alt="Authentic Japanese Ramen crafted by Chef Kim"
           fill
           priority
