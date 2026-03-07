@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kprince0.github.io/ModuHomepage/sitemap.xml
