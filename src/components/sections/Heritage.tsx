@@ -36,8 +36,8 @@ export default function Heritage() {
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm group">
             <div className="absolute inset-0 bg-black/20 z-10 group-hover:bg-transparent transition-colors duration-700" />
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/Chef Kim.jpg`}
-              alt="Chef Kim's culinary mastery"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/chef-kim.jpg`}
+              alt="Chef Kim's culinary mastery - Best Ramen in Jacksonville"
               fill
               className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
             />
@@ -53,11 +53,11 @@ export default function Heritage() {
             </h2>
 
             <p className="text-paper/80 mb-6 text-lg font-light leading-relaxed">
-              Chef Kim began his profound culinary journey in 2000, dedicating over two decades to mastering the delicate and rigorous art of Japanese ramen. His career is a testament to the belief that the perfect bowl is not just cooked, but crafted through years of disciplined precision.
+              Chef Kim began his profound culinary journey in 2000, dedicating over two decades to mastering the delicate and rigorous art of Japanese ramen. His career is a testament to the belief that the perfect bowl is not just cooked, but crafted through years of disciplined precision and silent dedication to ingredient perfection.
             </p>
 
             <p className="text-paper/80 mb-10 text-lg font-light leading-relaxed">
-              In 2019, Chef Kim brought this lifetime of expertise to Jacksonville, establishing Modu Ramen with a single mission: to provide an uncompromisingly authentic experience. Every broth, every noodle, and every topping reflects a legacy of flavor that spans over 26 years.
+              In 2019, Chef Kim brought this lifetime of expertise to Jacksonville, establishing Modu Ramen with a single mission: to provide an uncompromisingly authentic Gastronomic Destination. Every broth, every noodle, and every topping reflects a legacy of flavor and uncompromising standards that spans over 26 years.
             </p>
 
             {/* 통계/지표 섹션: 경력과 설립연도 구분 */}

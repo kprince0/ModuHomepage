@@ -55,7 +55,8 @@ export default function Location() {
             
             {/* Info */}
             <div>
-              <h2 className="text-4xl md:text-5xl font-serif mb-12">Visit Us</h2>
+              <span className="text-gold tracking-[0.4em] uppercase text-xs font-bold mb-4 block">Plan Your Visit</span>
+              <h2 className="text-4xl md:text-5xl font-serif mb-12">A Gastronomic Destination</h2>
               
               <div className="space-y-8">
                 <div className="flex items-start gap-4">

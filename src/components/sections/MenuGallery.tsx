@@ -7,25 +7,25 @@ const menuItems = [
   {
     category: "Fusion Ramen",
     name: "Beef Bulgogi Ramen",
-    description: "A rich fusion ramen featuring savory broth, topped with marinated beef bulgogi, soft-boiled egg, and fresh bok choy.",
+    description: "A rich fusion masterpiece featuring our signature savory broth, topped with marinated beef bulgogi, a soft-boiled egg, and fresh bok choy for a complex umami profile.",
     image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Pork Bulgogi.png`
   },
   {
     category: "Fusion Ramen",
     name: "Matcha Ramen",
-    description: "Soy broth infused with Ceremonial Grade Matcha, chashu (pork), soy marinated egg, black garlic oil, and red ginger.",
+    description: "An innovative gastronomic creation: soy broth infused with Ceremonial Grade Matcha, tender chashu, black garlic oil, and red ginger.",
     image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/matcha-ramen.jpg`
   },
   {
     category: "Entree",
     name: "BigBoss Beef Bulgogi Set",
-    description: "A full pound of beef marinated in our signature house-made bulgogi sauce crafted from an original Korean recipe.",
+    description: "A full pound of premium beef marinated in our house-made bulgogi sauce, delivering the pinnacle of umami in every bite.",
     image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/beef Bulgogi Set canva.png`
   },
   {
     category: "Appetizer",
     name: "K.F.C Modu Wings",
-    description: "Authentic Korean Fried Chicken wings, crispy fried and tossed in a traditional Korean spicy sauce.",
+    description: "Authentic Korean Fried Chicken wings, crispy fried to perfection and tossed in our chef's traditional spicy glaze.",
     image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/spicy modu wings.png`
   },
   {
@@ -84,7 +84,7 @@ export default function MenuGallery() {
                       <div key={i} className="relative w-1/2 h-full">
                         <Image
                           src={img}
-                          alt={`${item.name} ${i + 1}`}
+                          alt={`${item.name} ${i + 1} - Best Ramen in Jacksonville`}
                           fill
                           className={`transition-transform duration-700 opacity-90 group-hover:opacity-100 ${['BingSu', 'Soju Cocktail'].includes(item.category) ? 'object-contain p-2' : 'object-cover'} ${img.includes('sunrise') ? 'scale-[1.3] group-hover:scale-[1.35] translate-y-[10%]' : 'group-hover:scale-105'}`}
                         />
@@ -94,7 +94,7 @@ export default function MenuGallery() {
                 ) : (
                   <Image
                     src={item.image as string}
-                    alt={item.name}
+                    alt={`${item.name} - Best Ramen in Jacksonville`}
                     fill
                     className={`transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100 ${['BingSu', 'Soju Cocktail'].includes(item.category) ? 'object-contain p-4' : 'object-cover'}`}
                   />

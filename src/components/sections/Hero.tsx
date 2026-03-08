@@ -55,7 +55,7 @@ export default function Hero() {
       {/* 메인 텍스트 섹션 */}
       <div ref={textRef} className="z-20 text-center px-4 max-w-5xl mx-auto flex flex-col items-center">
         <h2 className="text-gold tracking-[0.3em] uppercase text-xs md:text-sm font-bold mb-6">
-          Jacksonville&apos;s Michelin-Worthy Experience
+          Jacksonville&apos;s Premier Gastronomic Destination.
         </h2>
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-paper leading-[1.1] mb-10">
@@ -65,13 +65,22 @@ export default function Hero() {
         {/* 셰프 경력과 식당 설립년도 구분 */}
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 mb-12">
           <p className="text-gold text-lg md:text-xl font-medium tracking-wide">
-            Chef Kim&apos;s 26-Year Mastery
+            Chef Kim&apos;s 26-Year Mastery (Since 2000)
           </p>
           <div className="hidden md:block w-px h-6 bg-gold/30" />
           <p className="text-paper/90 text-lg md:text-xl font-light tracking-wide">
             Established 2019 in Jacksonville
           </p>
         </div>
+
+        <a 
+          href="https://moduramennzti.web.ordersave.com/menu" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="px-8 py-4 bg-gold text-charcoal hover:bg-paper transition-colors duration-300 uppercase tracking-widest text-sm font-bold shadow-lg shadow-gold/20"
+        >
+          Reserve a Table
+        </a>
 
 
       </div>

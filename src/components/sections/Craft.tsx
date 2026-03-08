@@ -36,7 +36,7 @@ export default function Craft() {
             <div className="absolute inset-0 bg-black/20 z-10 group-hover:bg-transparent transition-colors duration-700" />
             <Image
               src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/Broth.jpg`}
-              alt="The Awakening Broth"
+              alt="The Awakening Broth - Authentic Japanese Ramen Process"
               fill
               className="object-cover transition-all duration-1000 scale-105 group-hover:scale-100"
             />
@@ -60,11 +60,16 @@ export default function Craft() {
               broth is the soul of Modu Ramen.
             </p>
 
+            <p className="text-paper/80 text-lg md:text-xl font-light leading-relaxed italic mb-6">
+              We meticulously extract every layer of depth from premium ingredients sourced directly from
+              <span className="text-gold font-medium"> Local Markets </span>
+              to ensure peak freshness and support our community.
+            </p>
+
             <p className="text-paper/80 text-lg md:text-xl font-light leading-relaxed italic">
-              We meticulously extract every layer of depth from premium ingredients,
-              resulting in a rich, velvety texture that honors
+              The result is a rich, velvety texture that honors
               <span className="text-gold font-medium"> twenty-six years of culinary mastery </span>
-              and Japanese tradition.
+              and Japanese tradition, reaching the pinnacle of umami.
             </p>
           </div>
 
