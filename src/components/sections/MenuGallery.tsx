@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const menuItems = [
   {
@@ -76,7 +77,7 @@ export default function MenuGallery() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16">
           {menuItems.map((item, index) => (
-            <div key={index} className="group overflow-hidden">
+            <Link key={index} href="/digital-menu" className="group overflow-hidden block cursor-pointer">
               <div className="relative h-80 w-full mb-6 overflow-hidden rounded-sm bg-black/40">
                 {item.images ? (
                   <div className="flex w-full h-full gap-2 p-2">
@@ -105,7 +106,7 @@ export default function MenuGallery() {
                 <h3 className="text-2xl font-serif mb-3 group-hover:text-gold transition-colors">{item.name}</h3>
                 <p className="text-paper/70 leading-relaxed font-light">{item.description}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
