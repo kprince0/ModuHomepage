@@ -30,6 +30,27 @@ const REVIEWS = [
     platform: "Google Review",
     text: "The sheer attention to detail here is breathtaking. Exploring their menu, from the delicate Vegetable Gyoza to the rich Matcha Ramen, is a premium culinary journey. Jacksonville's absolute finest.",
     rating: 5
+  },
+  {
+    id: 4,
+    name: "Michael K.",
+    platform: "Google Review",
+    text: "This is exactly what I've been looking for! The rich 18-hour broth is spectacular, and the BigBoss Beef Bulgogi Set is incredibly satisfying. Simply incredible.",
+    rating: 5
+  },
+  {
+    id: 5,
+    name: "Sarah T.",
+    platform: "Google Review",
+    text: "Chef Kim's dedication truly shines through. Every bowl of ramen feels like a warm hug. It's the only place in Jax I trust for authentic Japanese Tonkotsu.",
+    rating: 5
+  },
+  {
+    id: 6,
+    name: "David L.",
+    platform: "Google Review",
+    text: "Fantastic service and even better food. The Modu Wings as an appetizer set the stage perfectly for the amazing ramen. The Bingsu dessert was the perfect finishing touch!",
+    rating: 5
   }
 ];
 
@@ -52,7 +73,6 @@ async function getReviews(): Promise<Review[]> {
       const fiveStarReviews = data.result.reviews
         .filter((review: any) => review.rating === 5)
         .sort((a: any, b: any) => b.time - a.time)
-        .slice(0, 3)
         .map((review: any, index: number) => ({
           id: index + 1,
           name: review.author_name,
@@ -72,7 +92,18 @@ async function getReviews(): Promise<Review[]> {
 }
 
 export default async function Experience() {
-  const reviews = await getReviews();
+  const allReviews = await getReviews();
+  
+  // Use dates to cyclically select 3 distinct reviews every day.
+  const dayOfYear = Math.floor(Date.now() / 86400000);
+  const startIndex = dayOfYear % Math.max(1, allReviews.length);
+  
+  const displayReviews = [];
+  for (let i = 0; i < 3; i++) {
+    let index = (startIndex + i) % allReviews.length;
+    displayReviews.push(allReviews[index]);
+  }
+
   return (
     <section className="py-24 md:py-32 bg-paper text-charcoal">
       <div className="container mx-auto px-6 max-w-7xl">
@@ -85,9 +116,9 @@ export default async function Experience() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {reviews.map((review) => (
+          {displayReviews.map((review, idx) => (
             <div 
-              key={review.id} 
+              key={`${review.id}-${idx}`} 
               className="bg-white p-8 border border-charcoal/10 shadow-sm flex flex-col items-center text-center"
             >
               <div className="flex gap-1 mb-6 text-gold">
