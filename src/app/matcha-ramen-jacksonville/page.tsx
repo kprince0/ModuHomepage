@@ -47,7 +47,7 @@ export default function MatchaRamenPage() {
           <div className="md:w-1/2 relative w-full aspect-square">
             <div className="absolute inset-0 bg-gold/10 transform translate-x-4 translate-y-4 rounded-sm" />
             <Image 
-              src="/images/extracted_smart/menu-4_4.jpg" 
+              src="/images/menu/matcha-ramen.jpg" 
               alt="Matcha Ramen at Modu Ramen Jacksonville" 
               fill
               className="object-cover rounded-sm border focus:outline-none focus:ring-2 focus:ring-gold"

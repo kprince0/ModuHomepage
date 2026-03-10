@@ -12,31 +12,31 @@ const PAGES: RelatedPage[] = [
   {
     title: "Best Ramen in Jacksonville",
     href: "/best-ramen-jacksonville",
-    imagePath: "/images/extracted_smart/menu-4_0.jpg",
+    imagePath: "/images/Staff.png",
     alt: "Best Ramen Jacksonville"
   },
   {
     title: "Tonkotsu Ramen",
     href: "/tonkotsu-ramen-jacksonville",
-    imagePath: "/images/extracted_smart/menu-4_6.jpg",
+    imagePath: "/images/menu/Kimchi Tonkatsu.png",
     alt: "Authentic Tonkotsu Ramen"
   },
   {
     title: "Tantanmen Ramen",
     href: "/tantanmen-jacksonville",
-    imagePath: "/images/extracted_smart/menu-4_3.jpg",
+    imagePath: "/images/menu/TanTan.png",
     alt: "Spicy Tantanmen Ramen"
   },
   {
     title: "Matcha Ramen",
     href: "/matcha-ramen-jacksonville",
-    imagePath: "/images/extracted_smart/menu-4_4.jpg",
+    imagePath: "/images/menu/matcha-ramen.jpg",
     alt: "Matcha Ramen Jacksonville"
   },
   {
     title: "Korean Bingsu",
     href: "/bingsu-jacksonville",
-    imagePath: "/images/extracted_smart/menu-10_0.jpg",
+    imagePath: "/images/menu/Bingsu/mango cheesecake.png",
     alt: "Authentic Korean Bingsu"
   }
 ];
