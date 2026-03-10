@@ -14,10 +14,10 @@ export default function Header() {
       </Link>
       
       <nav className="hidden md:flex items-center gap-8 uppercase text-xs tracking-[0.2em] font-medium">
-        <Link href="#heritage" className="text-paper hover:text-gold transition-colors">Our Story</Link>
-        <Link href="#craft" className="text-paper hover:text-gold transition-colors">The Craft</Link>
-        <Link href="#menu" className="text-paper hover:text-gold transition-colors">Menu</Link>
-        <Link href="#location" className="text-paper hover:text-gold transition-colors">Location</Link>
+        <Link href="/#heritage" className="text-paper hover:text-gold transition-colors">Our Story</Link>
+        <Link href="/#craft" className="text-paper hover:text-gold transition-colors">The Craft</Link>
+        <Link href="/#menu" className="text-paper hover:text-gold transition-colors">Menu</Link>
+        <Link href="/#location" className="text-paper hover:text-gold transition-colors">Location</Link>
       </nav>
 
       <div className="hidden md:flex items-center gap-4">
@@ -55,10 +55,10 @@ export default function Header() {
         }`}
       >
         <nav className="flex flex-col items-center gap-8 uppercase text-lg tracking-[0.2em] font-medium">
-          <Link href="#heritage" onClick={() => setIsMobileMenuOpen(false)} className="text-paper hover:text-gold transition-colors">Our Story</Link>
-          <Link href="#craft" onClick={() => setIsMobileMenuOpen(false)} className="text-paper hover:text-gold transition-colors">The Craft</Link>
-          <Link href="#menu" onClick={() => setIsMobileMenuOpen(false)} className="text-paper hover:text-gold transition-colors">Menu</Link>
-          <Link href="#location" onClick={() => setIsMobileMenuOpen(false)} className="text-paper hover:text-gold transition-colors">Location</Link>
+          <Link href="/#heritage" onClick={() => setIsMobileMenuOpen(false)} className="text-paper hover:text-gold transition-colors">Our Story</Link>
+          <Link href="/#craft" onClick={() => setIsMobileMenuOpen(false)} className="text-paper hover:text-gold transition-colors">The Craft</Link>
+          <Link href="/#menu" onClick={() => setIsMobileMenuOpen(false)} className="text-paper hover:text-gold transition-colors">Menu</Link>
+          <Link href="/#location" onClick={() => setIsMobileMenuOpen(false)} className="text-paper hover:text-gold transition-colors">Location</Link>
         </nav>
 
         <div className="flex flex-col gap-4 mt-4 w-full px-10">
