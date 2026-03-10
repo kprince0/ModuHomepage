@@ -14,12 +14,12 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Modu Ramen | Authentic Japanese Ramen in Jacksonville",
-  description: "Jacksonville's best authentic Japanese ramen. Crafting Umami Since 2000. Experience Chef Kim's legacy of flavor.",
-  keywords: ["Ramen in Jacksonville", "Jacksonville ramen", "best ramen in florida", "authentic tonkotsu", "Modu Ramen", "Japanese restaurant Jacksonville"],
+  title: "Modu Ramen | Best Authentic Japanese Ramen in Jacksonville",
+  description: "Jacksonville's premier destination for the best authentic Japanese ramen. Featuring our signature 18-hour slow-cooked pork bone broth, handcrafted flavor balance, and Chef Kim's 26-year culinary mastery.",
+  keywords: ["best ramen jacksonville", "ramen jacksonville", "tonkotsu ramen jacksonville", "japanese ramen jacksonville", "authentic japanese ramen jacksonville", "tantanmen jacksonville", "bingsu jacksonville", "ramen near me jacksonville", "baymeadows ramen"],
   openGraph: {
-    title: "Modu Ramen | Authentic Japanese Ramen in Jacksonville",
-    description: "Experience the art of authentic Japanese ramen in Jacksonville, FL. Featuring 24-hour broth and handcrafted noodles.",
+    title: "Modu Ramen | Best Authentic Japanese Ramen in Jacksonville",
+    description: "Experience the art of authentic Japanese ramen in Jacksonville, FL. Featuring our signature 18-hour broth and chef-driven technique.",
     url: "https://kprince0.github.io/ModuHomepage",
     siteName: "Modu Ramen",
     locale: "en_US",
@@ -46,10 +46,10 @@ const jsonLd = {
   "@type": "Restaurant",
   "name": "Modu Ramen",
   "image": "https://kprince0.github.io/ModuHomepage/images/menu/Pork%20Bulgogi.png",
-  "description": "Jacksonville's premier authentic Japanese ramen restaurant, featuring 24-hour tonkotsu broth by Chef Dongil Kim.",
+  "description": "Jacksonville's premier destination for authentic Japanese ramen and Korean fusion. Famous for our 18-hour pork bone broth, tonkotsu, tantanmen, and dessert bingsu.",
   "@id": "https://kprince0.github.io/ModuHomepage",
   "url": "https://kprince0.github.io/ModuHomepage",
-  "telephone": "+1-904-800-3498",
+  "telephone": "+1-904-253-3454",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "8602 Baymeadows Rd",
@@ -58,15 +58,12 @@ const jsonLd = {
     "postalCode": "32256",
     "addressCountry": "US"
   },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 30.21855,
-    "longitude": -81.55465
-  },
+  "servesCuisine": ["Japanese", "Ramen", "Korean Fusion", "Asian"],
+  "priceRange": "$$",
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday"],
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
       "opens": "11:00",
       "closes": "21:00"
     },
@@ -83,9 +80,11 @@ const jsonLd = {
       "closes": "21:00"
     }
   ],
-  "menu": "https://kprince0.github.io/ModuHomepage/#menu",
-  "servesCuisine": "Japanese, Ramen",
-  "priceRange": "$$"
+  "sameAs": [
+    "https://www.instagram.com/modu.ramen/",
+    "https://www.facebook.com/moduramen/",
+    "https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47"
+  ]
 };
 
 export default function RootLayout({
