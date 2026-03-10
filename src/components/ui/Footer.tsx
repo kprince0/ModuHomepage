@@ -111,6 +111,12 @@ export default function Footer() {
             <span className="text-paper/20">|</span>
             <Link href="/our-broth" className="hover:text-paper transition-colors">Our 18-Hour Broth</Link>
             <span className="text-paper/20">|</span>
+            <Link href="/why-18-hour-pork-bone-broth-tastes-better" className="hover:text-paper transition-colors">Why 18-Hour Broth?</Link>
+            <span className="text-paper/20">|</span>
+            <Link href="/what-is-tonkotsu-ramen" className="hover:text-paper transition-colors">What is Tonkotsu?</Link>
+            <span className="text-paper/20">|</span>
+            <Link href="/ramen-baymeadows-jacksonville" className="hover:text-paper transition-colors">Baymeadows Location</Link>
+            <span className="text-paper/20">|</span>
             <Link href="/chef-kim" className="hover:text-paper transition-colors">Chef Kim</Link>
             <span className="text-paper/20">|</span>
             <Link href="/#menu" className="hover:text-paper transition-colors">Menu</Link>
