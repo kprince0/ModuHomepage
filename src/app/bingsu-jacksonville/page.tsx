@@ -61,8 +61,8 @@ export default function BingsuJacksonville() {
               <li className="flex gap-4 items-start">
                 <span className="text-gold text-xl mt-1">✓</span>
                 <div>
-                  <h4 className="text-paper font-medium text-lg">Injeolmi (Classic) Bingsu</h4>
-                  <p className="text-sm font-light text-paper/70 mt-1">The traditional Korean favorite featuring roasted soybean powder, chewy rice cakes, and sweet red bean paste.</p>
+                  <h4 className="text-paper font-medium text-lg">Tiramisu Bingsu</h4>
+                  <p className="text-sm font-light text-paper/70 mt-1">A perfect fusion of Italian and Korean desserts—fluffy snow ice layered with espresso, cocoa, and rich mascarpone.</p>
                 </div>
               </li>
             </ul>
