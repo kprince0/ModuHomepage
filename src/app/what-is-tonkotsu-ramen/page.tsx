@@ -32,7 +32,7 @@ export default function WhatIsTonkotsuRamen() {
         {/* Feature Image */}
         <div className="relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden mb-16 shadow-[0_0_40px_rgba(212,175,55,0.1)]">
           <Image
-             src={`${basePath}/images/tonkotsu-details.jpg`}
+             src={`${basePath}/images/menu/Kimchi Tonkatsu.png`}
             alt="Close up of a bowl of Tonkotsu Ramen showing the milky broth"
             fill
             priority

@@ -32,7 +32,7 @@ export default function WhyEighteenHourBroth() {
         {/* Feature Image */}
         <div className="relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden mb-16 shadow-[0_0_40px_rgba(212,175,55,0.1)]">
           <Image
-             src={`${basePath}/images/tonkotsu.jpg`}
+             src={`${basePath}/images/Broth.jpg`}
             alt="Chef preparing 18-hour pork bone broth at Modu Ramen"
             fill
             priority
