@@ -20,14 +20,24 @@ export default function Header() {
         <Link href="#location" className="text-paper hover:text-gold transition-colors">Location</Link>
       </nav>
 
-      <a 
-        href="https://moduramennzti.web.ordersave.com/menu" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="hidden md:block px-6 py-2 border border-gold text-gold hover:bg-gold hover:text-charcoal transition-colors duration-300 uppercase tracking-widest text-xs font-semibold"
-      >
-        Order Now
-      </a>
+      <div className="hidden md:flex items-center gap-4">
+        <a 
+          href="https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="px-6 py-2 bg-gold text-charcoal hover:bg-paper transition-colors duration-300 uppercase tracking-widest text-xs font-semibold"
+        >
+          Reserve a Table
+        </a>
+        <a 
+          href="https://moduramennzti.web.ordersave.com/menu" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="px-6 py-2 border border-gold text-gold hover:bg-gold hover:text-charcoal transition-colors duration-300 uppercase tracking-widest text-xs font-semibold"
+        >
+          Order Now
+        </a>
+      </div>
 
       {/* Mobile Menu Icon */}
       <button 
@@ -51,15 +61,26 @@ export default function Header() {
           <Link href="#location" onClick={() => setIsMobileMenuOpen(false)} className="text-paper hover:text-gold transition-colors">Location</Link>
         </nav>
 
-        <a 
-          href="https://moduramennzti.web.ordersave.com/menu" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="px-10 py-4 border border-gold text-gold hover:bg-gold hover:text-charcoal transition-colors duration-300 uppercase tracking-widest text-sm font-semibold mt-4"
-          onClick={() => setIsMobileMenuOpen(false)}
-        >
-          Order Now
-        </a>
+        <div className="flex flex-col gap-4 mt-4 w-full px-10">
+          <a 
+            href="https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-full py-4 bg-gold text-charcoal hover:bg-paper transition-colors duration-300 uppercase tracking-widest text-sm font-semibold text-center"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Reserve a Table
+          </a>
+          <a 
+            href="https://moduramennzti.web.ordersave.com/menu" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-full py-4 border border-gold text-gold hover:bg-gold hover:text-charcoal transition-colors duration-300 uppercase tracking-widest text-sm font-semibold text-center"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Order Now
+          </a>
+        </div>
       </div>
     </header>
   );

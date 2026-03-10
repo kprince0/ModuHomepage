@@ -109,7 +109,7 @@ export default function RootLayout({
         {/* Sticky Mobile Footer CTA */}
         <div className="md:hidden fixed bottom-0 left-0 w-full z-50 bg-charcoal/90 backdrop-blur-md border-t border-gold/20 p-4 pb-6 flex justify-center shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
           <a
-            href="https://moduramennzti.web.ordersave.com/menu"
+            href="https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full max-w-sm py-4 bg-gold text-charcoal text-center uppercase tracking-widest text-sm font-bold active:scale-95 transition-transform"

@@ -73,14 +73,24 @@ export default function Hero() {
           </p>
         </div>
 
-        <a 
-          href="https://moduramennzti.web.ordersave.com/menu" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="px-8 py-4 bg-gold text-charcoal hover:bg-paper transition-colors duration-300 uppercase tracking-widest text-sm font-bold shadow-lg shadow-gold/20"
-        >
-          Reserve a Table
-        </a>
+        <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center w-full max-w-sm mx-auto sm:max-w-none">
+          <a 
+            href="https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto px-8 py-4 bg-gold text-charcoal hover:bg-paper transition-colors duration-300 uppercase tracking-widest text-sm font-bold shadow-lg shadow-gold/20 text-center"
+          >
+            Reserve a Table
+          </a>
+          <a 
+            href="https://moduramennzti.web.ordersave.com/menu" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto px-8 py-4 border border-gold text-gold hover:bg-gold hover:text-charcoal transition-colors duration-300 uppercase tracking-widest text-sm font-bold text-center bg-charcoal/30 backdrop-blur-sm"
+          >
+            Order Now
+          </a>
+        </div>
 
 
       </div>
