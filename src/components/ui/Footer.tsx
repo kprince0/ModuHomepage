@@ -103,7 +103,7 @@ export default function Footer() {
           <div className="flex flex-wrap gap-x-6 gap-y-3 text-xs text-gold/80">
             <Link href="/best-ramen-jacksonville" className="hover:text-paper transition-colors">Best Ramen in Jacksonville</Link>
             <span className="text-paper/20">|</span>
-            <Link href="/tonkotsu-ramen-jacksonville" className="hover:text-paper transition-colors">Tonkotsu Ramen</Link>
+            <Link href="/bigboss-bulgogi-set" className="hover:text-paper transition-colors">BigBoss Bulgogi Set</Link>
             <span className="text-paper/20">|</span>
             <Link href="/tantanmen-jacksonville" className="hover:text-paper transition-colors">Tantanmen</Link>
             <span className="text-paper/20">|</span>

@@ -18,7 +18,7 @@ export default function TantanmenJacksonville() {
       <section className="relative py-20 px-6 container mx-auto max-w-5xl">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-serif text-paper mb-6">
-            <span className="text-gold">Tantanmen Ramen</span> in Jacksonville
+            <span className="text-gold">Tantanmen</span> in Jacksonville
           </h1>
           <p className="text-lg md:text-xl text-paper/80 font-light max-w-3xl mx-auto leading-relaxed">
             If you crave bold, complex flavors, our signature Tantanmen at Modu Ramen is a must-try. A Japanese take on Sichuan Dan Dan noodles, we blend a rich, nutty sesame paste with fiery chili oil and our robust 18-hour pork bone broth.
@@ -28,8 +28,8 @@ export default function TantanmenJacksonville() {
         {/* Feature Image */}
         <div className="relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden mb-16 shadow-[0_0_40px_rgba(212,175,55,0.1)]">
           <Image
-             src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Pork Bulgogi.png`}
-            alt="Spicy Tantanmen ramen at Modu Ramen in Jacksonville"
+             src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/TanTan.png`}
+            alt="Spicy Tantanmen at Modu Ramen in Jacksonville"
             fill
             priority
             className="object-cover object-center"
