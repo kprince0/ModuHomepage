@@ -32,7 +32,7 @@ export default function ChefKim() {
             alt="Chef Kim plating authentic Japanese ramen at Modu Ramen"
             fill
             priority
-            className="object-cover object-center"
+            className="object-cover object-[center_15%]"
           />
         </div>
 
