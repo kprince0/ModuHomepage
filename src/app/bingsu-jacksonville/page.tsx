@@ -28,7 +28,7 @@ export default function BingsuJacksonville() {
         {/* Feature Image */}
         <div className="relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden mb-16 shadow-[0_0_40px_rgba(212,175,55,0.1)]">
           <Image
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Pork Bulgogi.png`}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Bingsu/mango cheesecake.png`}
             alt="Delicious Bingsu dessert at Modu Ramen in Jacksonville"
             fill
             priority
