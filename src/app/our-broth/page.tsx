@@ -1,11 +1,12 @@
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
+import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The 18-Hour Broth | Modu Ramen Jacksonville",
+  title: "The Authentic 18-Hour Ramen Broth | Modu Ramen Jacksonville",
   description: "Learn why Modu Ramen's signature pork bone broth takes 18 hours to perfect. A dedication to authentic Japanese tonkotsu flavor in Jacksonville.",
 };
 
@@ -46,8 +47,11 @@ export default function OurBroth() {
             <p className="text-paper/80 font-light mb-6 leading-relaxed">
               We begin by carefully selecting premium pork bones. The first boil is crucial for purifying the bones—removing any impurities that could cloud the flavor. After a meticulous cleaning, the second, extended boil begins. 
             </p>
-            <p className="text-paper/80 font-light leading-relaxed">
+            <p className="text-paper/80 font-light mb-6 leading-relaxed">
               For 18 continuous hours, the bones are kept at a rolling, vigorous boil. This intense heat and constant agitation force the collagen, marrow, and fat to emulsify completely into the liquid, transforming clear water into a pearlescent, milky, and incredibly creamy soup base.
+            </p>
+            <p className="text-paper/80 font-light leading-relaxed">
+              The result is an intensely flavorful, deep umami broth that forms the backbone of our legendary Tonkotsu and Tantanmen. It's a labor of love that Chef Kim has perfected over his 26-year career, ensuring every bowl served in Jacksonville is as authentic as those found in Japan.
             </p>
           </div>
           
@@ -104,6 +108,7 @@ export default function OurBroth() {
         </div>
       </section>
 
+      <RelatedPages currentPath="/our-broth" />
       <Footer />
     </main>
   );

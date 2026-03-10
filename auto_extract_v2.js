@@ -106,15 +106,6 @@ async function processImage(file) {
       }
     }
     
-    // Sort components from top to bottom, then left to right
-    components.sort((a, b) => {
-      // If they are on roughly the same row (within 100px difference in Y)
-      if (Math.abs(a.minY - b.minY) < 150) {
-        return a.minX - b.minX; // Left to right
-      }
-      return a.minY - b.minY; // Top to bottom
-    });
-    
     // Merge or remove overlaps
     const unique = [];
     for (const comp of components) {
@@ -130,12 +121,31 @@ async function processImage(file) {
       }
       if (!overlap) unique.push(comp);
     }
+
+    // Sort components: Split into Left column and Right column based on minX, then sort by Y
+    const splitX = Math.floor(sw / 2);
+    const leftCol = unique.filter(c => c.minX < splitX);
+    const rightCol = unique.filter(c => c.minX >= splitX);
+
+    leftCol.sort((a, b) => a.minY - b.minY);
+    rightCol.sort((a, b) => a.minY - b.minY);
+
+    // Merge them back: Left column items first, then Right column items
+    // Wait, the original page.tsx reading order (which used my simple grid)
+    // read row by row (e.g. Row 1 Left, Row 1 Right, Row 2 Left, Row 2 Right).
+    // Let's interleave them to reconstruct that reading order!
+    const finalSorted = [];
+    const maxLen = Math.max(leftCol.length, rightCol.length);
+    for (let i = 0; i < maxLen; i++) {
+        if (i < leftCol.length) finalSorted.push(leftCol[i]);
+        if (i < rightCol.length) finalSorted.push(rightCol[i]);
+    }
     
-    console.log(`Found ${unique.length} potential images in ${file}`);
+    console.log(`Found ${finalSorted.length} potential images in ${file}`);
     
     // Extract them
-    for (let i = 0; i < unique.length; i++) {
-        const box = unique[i];
+    for (let i = 0; i < finalSorted.length; i++) {
+        const box = finalSorted[i];
         try {
           // Crop and let sharp figure out rotation if possible, but actually we just do bounding box
           await sharp(filePath)

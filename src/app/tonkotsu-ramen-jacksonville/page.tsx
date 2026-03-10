@@ -1,5 +1,6 @@
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
+import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -46,8 +47,11 @@ export default function TonkotsuRamenJacksonville() {
             <p className="text-paper/80 font-light mb-6 leading-relaxed">
               At Modu Ramen, located on Baymeadows Rd in Jacksonville, Chef Kim employs a rigorous 18-hour double-boil process. We extract every ounce of flavor from premium pork bones, resulting in a soup base that is incredibly creamy without feeling overly heavy.
             </p>
+            <p className="text-paper/80 font-light mb-6 leading-relaxed">
+              This meticulous method ensures that the collagen breaks down perfectly, delivering a smooth, velvety texture that coats every noodle. We carefully skim the broth to remove impurities, guaranteeing a pristine, milky-white appearance and a clean, deep umami finish that true ramen lovers appreciate.
+            </p>
             <p className="text-paper/80 font-light leading-relaxed">
-              We pair this magnificent broth with thin, straight noodles that perfectly hold the soup, thick-cut melt-in-your-mouth chashu (braised pork belly), kikurage (wood ear mushrooms), and a beautifully soft-boiled marinated egg.
+              We pair this magnificent broth with thin, straight noodles that perfectly hold the soup, thick-cut melt-in-your-mouth chashu (braised pork belly), kikurage (wood ear mushrooms), scallions, and a beautifully soft-boiled marinated egg. A drizzle of mayu (black garlic oil) adds an unforgettable roasted complexity.
             </p>
           </div>
           
@@ -114,6 +118,7 @@ export default function TonkotsuRamenJacksonville() {
         </div>
       </section>
 
+      <RelatedPages currentPath="/tonkotsu-ramen-jacksonville" />
       <Footer />
     </main>
   );

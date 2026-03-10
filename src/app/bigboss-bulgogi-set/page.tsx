@@ -1,11 +1,12 @@
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
+import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "BigBoss Beef Bulgogi Set | Modu Ramen Jacksonville",
+  title: "BigBoss Beef Bulgogi Set in Jacksonville | Modu Ramen",
   description: "A full pound of premium beef marinated in our signature house-made bulgogi sauce. Served with steamed white rice. Add mozzarella cheese for the ultimate experience.",
 };
 
@@ -106,6 +107,7 @@ export default function BigBossBulgogiSet() {
         </div>
       </section>
 
+      <RelatedPages currentPath="/bigboss-bulgogi-set" />
       <Footer />
     </main>
   );

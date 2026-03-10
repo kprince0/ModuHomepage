@@ -1,5 +1,6 @@
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
+import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -45,6 +46,9 @@ export default function ChefKim() {
             </p>
             <p className="text-paper/80 font-light mb-6 leading-relaxed">
               Establishing Modu Ramen in Jacksonville in 2019 was the culmination of his life's work. His goal was simple but ambitious: to elevate the local ramen scene by introducing an uncompromising 18-hour double-boil tonkotsu broth that rivals the finest shops in Japan.
+            </p>
+            <p className="text-paper/80 font-light mb-6 leading-relaxed">
+              Chef Kim believes that every bowl tells a story. From meticulously sourcing the freshest ingredients to crafting custom noodles and delicately slicing chashu pork, his attention to detail is evident in every step of the preparation. This unwavering dedication transforms a simple bowl of noodles into an unforgettable culinary experience.
             </p>
             <p className="text-paper/80 font-light leading-relaxed">
               "Modu" means "Everyone" in Korean. Chef Kim's philosophy is rooted in hospitality—crafting bowls of incredible depth and comfort that can be enjoyed by everyone who walks through his doors on Baymeadows Road.
@@ -96,6 +100,7 @@ export default function ChefKim() {
         </div>
       </section>
 
+      <RelatedPages currentPath="/chef-kim" />
       <Footer />
     </main>
   );

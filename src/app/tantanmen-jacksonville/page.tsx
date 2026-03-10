@@ -1,11 +1,12 @@
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
+import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Tantanmen Ramen in Jacksonville | Modu Ramen",
+  title: "Best Tantanmen Ramen in Jacksonville | Modu Ramen",
   description: "Experience the best Tantanmen ramen in Jacksonville at Modu Ramen. A perfect balance of fiery spice and rich, creamy sesame flavor topped with seasoned ground pork.",
 };
 
@@ -44,10 +45,10 @@ export default function TantanmenJacksonville() {
               Tantanmen represents the perfect marriage of spice and creaminess. The foundation of our bowl starts with a rich sesame paste (goma) mixed with our house-made chili oil (rayu), providing an intoxicating aroma and a vibrant orange hue.
             </p>
             <p className="text-paper/80 font-light mb-6 leading-relaxed">
-              We then pour in our signature 18-hour tonkotsu broth, creating an exceptionally creamy, thick soup base that clings to every noodle. The bowl is generously topped with sweet and savory seasoned ground pork, bok choy, and a sprinkle of crushed nuts for texture.
+              We then pour in our signature 18-hour tonkotsu broth, creating an exceptionally creamy, thick soup base that clings to every noodle. The bowl is generously topped with sweet and savory seasoned ground pork, bok choy, and a sprinkle of crushed nuts for texture. This ensures that every bite provides a satisfying crunch against the soft noodles.
             </p>
             <p className="text-paper/80 font-light leading-relaxed">
-              Modu Ramen's Tantanmen has become a cult favorite for spicy food lovers in Jacksonville and the Southside area looking for something different from the classic tonkotsu.
+              Modu Ramen's Tantanmen has become a cult favorite for spicy food lovers in Jacksonville and the Southside area looking for something different from the classic tonkotsu. The interplay of nutty sesame, fiery chili, and deep pork bone broth creates an unforgettable umami bomb.
             </p>
           </div>
           
@@ -113,6 +114,7 @@ export default function TantanmenJacksonville() {
         </div>
       </section>
 
+      <RelatedPages currentPath="/tantanmen-jacksonville" />
       <Footer />
     </main>
   );

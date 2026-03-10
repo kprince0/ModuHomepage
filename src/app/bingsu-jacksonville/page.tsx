@@ -1,11 +1,12 @@
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
+import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Bingsu in Jacksonville | Korean Shaved Ice at Modu Ramen",
+  title: "Authentic Bingsu in Jacksonville | Modu Ramen",
   description: "Discover the best Bingsu in Jacksonville at Modu Ramen. Our Korean shaved ice desserts feature finely milled ice that melts in your mouth like snow.",
 };
 
@@ -43,8 +44,11 @@ export default function BingsuJacksonville() {
             <p className="text-paper/80 font-light mb-6 leading-relaxed">
               Bingsu (빙수) is a beloved traditional Korean shaved ice dessert with sweet toppings. Unlike traditional American snow cones or Hawaiian shaved ice which uses crushed ice and syrup, authentic Bingsu is made by freezing a milky sweet liquid and shaving it with a specialized machine.
             </p>
+            <p className="text-paper/80 font-light mb-6 leading-relaxed">
+              The result is a delicate, fluffy texture that melts instantly in your mouth. At Modu Ramen, it's the perfect light and refreshing dessert to follow up a hot, rich bowl of our signature tonkotsu ramen or spicy tantanmen.
+            </p>
             <p className="text-paper/80 font-light leading-relaxed">
-              The result is a delicate, fluffy texture that melts instantly in your mouth. At Modu Ramen, it's the perfect light and refreshing dessert to follow up a hot, rich bowl of our signature tonkotsu ramen.
+              We carefully source the freshest fruits and authentic toppings, ensuring every spoonful offers a perfect balance of creamy snow-ice and vibrant, sweet flavors. It’s an experience that brings a taste of modern café culture straight from Seoul to Jacksonville.
             </p>
           </div>
           
@@ -96,6 +100,7 @@ export default function BingsuJacksonville() {
         </div>
       </section>
 
+      <RelatedPages currentPath="/bingsu-jacksonville" />
       <Footer />
     </main>
   );

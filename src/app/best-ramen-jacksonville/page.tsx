@@ -1,5 +1,6 @@
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
+import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -129,6 +130,7 @@ export default function BestRamenJacksonville() {
         </div>
       </section>
 
+      <RelatedPages currentPath="/best-ramen-jacksonville" />
       <Footer />
     </main>
   );
