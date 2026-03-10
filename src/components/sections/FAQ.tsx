@@ -30,7 +30,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
+    setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
   return (
@@ -49,11 +49,12 @@ export default function FAQ() {
             return (
               <div 
                 key={idx} 
-                className="bg-[#111] border border-paper/10 rounded-sm overflow-hidden transition-all duration-300"
+                className="bg-[#111] border border-paper/10 rounded-sm transition-all duration-300"
               >
                 <button
+                  type="button"
                   onClick={() => toggleFAQ(idx)}
-                  className="w-full text-left px-8 py-6 flex justify-between items-center focus:outline-none"
+                  className="w-full text-left px-8 py-6 flex justify-between items-center focus:outline-none cursor-pointer"
                 >
                   <h3 className={`text-lg md:text-xl font-serif transition-colors ${isOpen ? 'text-gold' : 'text-paper hover:text-gold/80'}`}>
                     {faq.question}
@@ -64,12 +65,14 @@ export default function FAQ() {
                 </button>
                 
                 <div 
-                  className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                    isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                  className={`grid transition-[grid-template-rows,opacity] duration-500 ease-in-out ${
+                    isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
                   }`}
                 >
-                  <div className="px-8 pb-8 text-paper/70 font-light leading-relaxed">
-                    {faq.answer}
+                  <div className="overflow-hidden">
+                    <div className="px-8 pb-8 text-paper/70 font-light leading-relaxed">
+                      {faq.answer}
+                    </div>
                   </div>
                 </div>
               </div>
