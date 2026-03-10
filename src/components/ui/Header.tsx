@@ -17,6 +17,7 @@ export default function Header() {
         <Link href="/#heritage" className="text-paper hover:text-gold transition-colors">Our Story</Link>
         <Link href="/#craft" className="text-paper hover:text-gold transition-colors">The Craft</Link>
         <Link href="/#menu" className="text-paper hover:text-gold transition-colors">Menu</Link>
+        <Link href="/blog" className="text-gold hover:text-paper transition-colors">Journal</Link>
         <Link href="/#location" className="text-paper hover:text-gold transition-colors">Location</Link>
       </nav>
 
@@ -58,6 +59,7 @@ export default function Header() {
           <Link href="/#heritage" onClick={() => setIsMobileMenuOpen(false)} className="text-paper hover:text-gold transition-colors">Our Story</Link>
           <Link href="/#craft" onClick={() => setIsMobileMenuOpen(false)} className="text-paper hover:text-gold transition-colors">The Craft</Link>
           <Link href="/#menu" onClick={() => setIsMobileMenuOpen(false)} className="text-paper hover:text-gold transition-colors">Menu</Link>
+          <Link href="/blog" onClick={() => setIsMobileMenuOpen(false)} className="text-gold hover:text-paper transition-colors">Journal</Link>
           <Link href="/#location" onClick={() => setIsMobileMenuOpen(false)} className="text-paper hover:text-gold transition-colors">Location</Link>
         </nav>
 
