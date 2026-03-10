@@ -28,7 +28,7 @@ export default function ChefKim() {
         {/* Feature Image */}
         <div className="relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden mb-16 shadow-[0_0_40px_rgba(212,175,55,0.1)]">
           <Image
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Pork Bulgogi.png`}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/chef-kim.jpg`}
             alt="Chef Kim plating authentic Japanese ramen at Modu Ramen"
             fill
             priority
@@ -53,7 +53,7 @@ export default function ChefKim() {
           
           <div className="relative h-[500px] rounded-lg overflow-hidden border border-gold/20 shadow-lg">
              <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Pork Bulgogi.png`}
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/Broth.jpg`}
               alt="Chef Kim's signature Tonkotsu ramen"
               fill
               className="object-cover"
