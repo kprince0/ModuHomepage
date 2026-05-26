@@ -4,15 +4,34 @@ import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import SchemaScripts from "@/components/SchemaScripts";
+import { breadcrumbSchema, articleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "BigBoss Beef Bulgogi Set in Jacksonville | Modu Ramen",
   description: "A full pound of premium beef marinated in our signature house-made bulgogi sauce. Served with steamed white rice. Add mozzarella cheese for the ultimate experience.",
 };
 
+const schemas = [
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Menu", url: "/digital-menu" },
+    { name: "BigBoss Beef Bulgogi Set", url: "/bigboss-bulgogi-set" },
+  ]),
+  articleSchema({
+    slug: "bigboss-bulgogi-set",
+    headline: "BigBoss Beef Bulgogi Set in Jacksonville",
+    description: "A full pound of premium beef marinated in Modu Ramen's signature house-made bulgogi sauce, served with steamed rice and optional mozzarella.",
+    image: "/images/menu/authentic-beef-bulgogi-set-jacksonville.webp",
+    articleSection: "Menu Spotlight",
+    keywords: ["bigboss bulgogi", "beef bulgogi jacksonville", "korean beef set", "modu ramen entree"],
+  }),
+];
+
 export default function BigBossBulgogiSet() {
   return (
     <main className="min-h-screen selection:bg-gold selection:text-charcoal pt-[104px] bg-charcoal">
+      <SchemaScripts schemas={schemas} />
       <Header />
       
       {/* Hero Section */}
@@ -29,7 +48,7 @@ export default function BigBossBulgogiSet() {
         {/* Feature Image */}
         <div className="relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden mb-16 shadow-[0_0_40px_rgba(212,175,55,0.1)]">
           <Image
-             src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/beef Bulgogi Set canva.png`}
+             src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/authentic-beef-bulgogi-set-jacksonville.webp`}
             alt="BigBoss Beef Bulgogi Set at Modu Ramen in Jacksonville"
             fill
             priority
@@ -96,7 +115,7 @@ export default function BigBossBulgogiSet() {
               Order Online
             </a>
             <a 
-              href="https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47" 
+              href="https://modu-waitlist.vercel.app/reserve" 
               target="_blank" 
               rel="noopener noreferrer"
               className="px-8 py-4 border border-gold text-gold hover:bg-gold hover:text-charcoal transition-colors duration-300 uppercase tracking-widest text-sm font-bold bg-charcoal/30"

@@ -4,15 +4,32 @@ import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import SchemaScripts from "@/components/SchemaScripts";
+import { breadcrumbSchema, webPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Chef Kim's 26-Year Ramen Mastery | Modu Ramen Jacksonville",
   description: "Learn about Chef Kim's 26-year culinary journey and his dedication to bringing the most authentic Japanese ramen experience to Jacksonville, FL.",
 };
 
+const schemas = [
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Chef Kim", url: "/chef-kim" },
+  ]),
+  webPageSchema({
+    slug: "chef-kim",
+    name: "Chef Kim's 26-Year Ramen Mastery",
+    description: "Chef Dongil Kim's 26-year culinary journey and dedication to authentic Japanese ramen in Jacksonville, FL.",
+    image: "/images/chef-kim-culinary-mastery-jacksonville.webp",
+    type: "AboutPage",
+  }),
+];
+
 export default function ChefKim() {
   return (
     <main className="min-h-screen selection:bg-gold selection:text-charcoal pt-[104px] bg-charcoal">
+      <SchemaScripts schemas={schemas} />
       <Header />
       
       {/* Hero Section */}
@@ -29,7 +46,7 @@ export default function ChefKim() {
         {/* Feature Image */}
         <div className="relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden mb-16 shadow-[0_0_40px_rgba(212,175,55,0.1)]">
           <Image
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/chef-kim.jpg`}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/chef-kim-culinary-mastery-jacksonville.webp`}
             alt="Chef Kim plating authentic Japanese ramen at Modu Ramen"
             fill
             priority
@@ -57,7 +74,7 @@ export default function ChefKim() {
           
           <div className="relative h-[500px] rounded-lg overflow-hidden border border-gold/20 shadow-lg">
              <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/Broth.jpg`}
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/18-hour-slow-cooked-ramen-broth-jacksonville.webp`}
               alt="Chef Kim's signature Tonkotsu ramen"
               fill
               className="object-cover"
@@ -81,7 +98,7 @@ export default function ChefKim() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
              <a 
-              href="https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47" 
+              href="https://modu-waitlist.vercel.app/reserve" 
               target="_blank" 
               rel="noopener noreferrer"
               className="px-8 py-4 bg-gold text-charcoal hover:bg-paper transition-colors duration-300 uppercase tracking-widest text-sm font-bold"

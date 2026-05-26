@@ -4,17 +4,36 @@ import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import SchemaScripts from "@/components/SchemaScripts";
+import { breadcrumbSchema, articleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Spicy Ramen in Jacksonville | Modu Ramen",
   description: "Love heat? Modu Ramen serves the best spicy ramen in Jacksonville. Try our fiery Spicy Tonkotsu or bold Tantanmen made with 18-hour pork bone broth.",
 };
 
+const schemas = [
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Menu", url: "/digital-menu" },
+    { name: "Spicy Ramen", url: "/spicy-ramen-jacksonville" },
+  ]),
+  articleSchema({
+    slug: "spicy-ramen-jacksonville",
+    headline: "Best Spicy Ramen in Jacksonville",
+    description: "From the nutty heat of Tantanmen to fiery Spicy Tonkotsu — Modu Ramen balances intense heat with deep, creamy savory flavors.",
+    image: "/images/menu/creamy-tantanmen-ramen-jacksonville.webp",
+    articleSection: "Menu Spotlight",
+    keywords: ["spicy ramen jacksonville", "tantanmen", "spicy tonkotsu", "modu ramen heat"],
+  }),
+];
+
 export default function SpicyRamenJacksonville() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-  
+
   return (
     <main className="min-h-screen selection:bg-gold selection:text-charcoal pt-[104px] bg-charcoal">
+      <SchemaScripts schemas={schemas} />
       <Header />
       
       {/* Hero Section */}
@@ -32,7 +51,7 @@ export default function SpicyRamenJacksonville() {
         {/* Feature Image */}
         <div className="relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden mb-16 shadow-[0_0_40px_rgba(212,175,55,0.1)]">
           <Image
-             src={`${basePath}/images/menu/TanTan.png`}
+             src={`${basePath}/images/menu/creamy-tantanmen-ramen-jacksonville.webp`}
             alt="Spicy Tantanmen ramen bowl at Modu Ramen Jacksonville"
             fill
             priority

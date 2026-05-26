@@ -4,17 +4,36 @@ import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import SchemaScripts from "@/components/SchemaScripts";
+import { breadcrumbSchema, articleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Ramen in Baymeadows, Jacksonville | Modu Ramen",
   description: "Find the best authentic Japanese ramen near Baymeadows in Jacksonville. Modu Ramen serves rich tonkotsu, tantanmen, and bulgogi fusion ramen. Dine-in or order online.",
 };
 
+const schemas = [
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Locations", url: "/ramen-baymeadows-jacksonville" },
+    { name: "Baymeadows", url: "/ramen-baymeadows-jacksonville" },
+  ]),
+  articleSchema({
+    slug: "ramen-baymeadows-jacksonville",
+    headline: "Best Ramen in Baymeadows, Jacksonville",
+    description: "Authentic Japanese ramen on Baymeadows Rd in Jacksonville — rich tonkotsu, tantanmen, and bulgogi fusion ramen with on-site parking.",
+    image: "/images/menu/signature-pork-bulgogi-ramen-jacksonville.webp",
+    articleSection: "Local Guide",
+    keywords: ["ramen baymeadows", "ramen near me jacksonville", "japanese restaurant baymeadows", "modu ramen location"],
+  }),
+];
+
 export default function RamenBaymeadows() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-  
+
   return (
     <main className="min-h-screen selection:bg-gold selection:text-charcoal pt-[104px] bg-charcoal">
+      <SchemaScripts schemas={schemas} />
       <Header />
       
       {/* Hero Section */}
@@ -113,7 +132,7 @@ export default function RamenBaymeadows() {
               Order Pickup
             </a>
             <Link 
-              href="https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47" 
+              href="https://modu-waitlist.vercel.app/reserve" 
               target="_blank"
               className="px-8 py-3 rounded border border-gold text-gold hover:bg-gold/10 transition-colors tracking-wide"
             >

@@ -4,17 +4,36 @@ import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import SchemaScripts from "@/components/SchemaScripts";
+import { breadcrumbSchema, articleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Why 18-Hour Pork Bone Broth Tastes Better | Modu Ramen Blog",
   description: "Discover the secret behind Modu Ramen's signature Tonkotsu. Find out why double-boiling pork bones for 18 hours creates the richest, creamiest ramen broth.",
 };
 
+const schemas = [
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Blog", url: "/blog" },
+    { name: "Why 18-Hour Broth Tastes Better", url: "/why-18-hour-pork-bone-broth-tastes-better" },
+  ]),
+  articleSchema({
+    slug: "why-18-hour-pork-bone-broth-tastes-better",
+    headline: "Why 18-Hour Pork Bone Broth Tastes Better",
+    description: "The secret behind Modu Ramen's signature Tonkotsu: why double-boiling pork bones for 18 hours creates the richest, creamiest ramen broth.",
+    image: "/images/18-hour-slow-cooked-ramen-broth-jacksonville.webp",
+    articleSection: "The Craft",
+    keywords: ["18 hour broth", "pork bone broth", "tonkotsu broth", "collagen extraction", "double boil ramen"],
+  }),
+];
+
 export default function WhyEighteenHourBroth() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-  
+
   return (
     <main className="min-h-screen selection:bg-gold selection:text-charcoal pt-[104px] bg-charcoal">
+      <SchemaScripts schemas={schemas} />
       <Header />
       
       {/* Hero Section */}
@@ -32,7 +51,7 @@ export default function WhyEighteenHourBroth() {
         {/* Feature Image */}
         <div className="relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden mb-16 shadow-[0_0_40px_rgba(212,175,55,0.1)]">
           <Image
-             src={`${basePath}/images/Broth.jpg`}
+             src={`${basePath}/images/18-hour-slow-cooked-ramen-broth-jacksonville.webp`}
             alt="Chef preparing 18-hour pork bone broth at Modu Ramen"
             fill
             priority

@@ -4,15 +4,34 @@ import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import SchemaScripts from "@/components/SchemaScripts";
+import { breadcrumbSchema, articleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Tonkotsu Ramen in Jacksonville | Modu Ramen",
   description: "Looking for rich tonkotsu ramen in Jacksonville? Modu Ramen serves authentic Japanese ramen with a creamy 18-hour pork bone broth at our Baymeadows location.",
 };
 
+const schemas = [
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Menu", url: "/digital-menu" },
+    { name: "Tonkotsu Ramen", url: "/tonkotsu-ramen-jacksonville" },
+  ]),
+  articleSchema({
+    slug: "tonkotsu-ramen-jacksonville",
+    headline: "Tonkotsu Ramen in Jacksonville",
+    description: "Authentic Japanese tonkotsu ramen with a creamy 18-hour pork bone broth at Modu Ramen, Baymeadows Jacksonville.",
+    image: "/images/menu/best-kimchi-tonkotsu-ramen-jacksonville.webp",
+    articleSection: "Menu Spotlight",
+    keywords: ["tonkotsu ramen jacksonville", "18 hour broth", "japanese ramen baymeadows", "modu ramen"],
+  }),
+];
+
 export default function TonkotsuRamenJacksonville() {
   return (
     <main className="min-h-screen selection:bg-gold selection:text-charcoal pt-[104px] bg-charcoal">
+      <SchemaScripts schemas={schemas} />
       <Header />
       
       {/* Hero Section */}
@@ -29,7 +48,7 @@ export default function TonkotsuRamenJacksonville() {
         {/* Feature Image */}
         <div className="relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden mb-16 shadow-[0_0_40px_rgba(212,175,55,0.1)]">
           <Image
-             src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Kimchi Tonkatsu.png`}
+             src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/best-kimchi-tonkotsu-ramen-jacksonville.webp`}
             alt="Authentic Tonkotsu ramen with chashu and soy-marinated egg at Modu Ramen in Jacksonville"
             fill
             priority
@@ -107,7 +126,7 @@ export default function TonkotsuRamenJacksonville() {
               Order Tonkotsu Now
             </a>
             <a 
-              href="https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47" 
+              href="https://modu-waitlist.vercel.app/reserve" 
               target="_blank" 
               rel="noopener noreferrer"
               className="px-8 py-4 border border-gold text-gold hover:bg-gold hover:text-charcoal transition-colors duration-300 uppercase tracking-widest text-sm font-bold bg-charcoal/30"

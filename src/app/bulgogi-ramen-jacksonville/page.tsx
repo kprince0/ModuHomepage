@@ -4,17 +4,36 @@ import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import SchemaScripts from "@/components/SchemaScripts";
+import { breadcrumbSchema, articleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Authentic Bulgogi Ramen in Jacksonville | Modu Ramen",
   description: "Experience the ultimate fusion of Korean and Japanese flavors with Modu Ramen's signature Bulgogi Ramen in Jacksonville. Made with 18-hour broth.",
 };
 
+const schemas = [
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Menu", url: "/digital-menu" },
+    { name: "Bulgogi Ramen", url: "/bulgogi-ramen-jacksonville" },
+  ]),
+  articleSchema({
+    slug: "bulgogi-ramen-jacksonville",
+    headline: "Authentic Bulgogi Ramen in Jacksonville",
+    description: "Korean-Japanese fusion: tender, sweet-and-savory Korean marinated beef meets Modu Ramen's 18-hour tonkotsu broth.",
+    image: "/images/menu/signature-pork-bulgogi-ramen-jacksonville.webp",
+    articleSection: "Menu Spotlight",
+    keywords: ["bulgogi ramen jacksonville", "korean japanese fusion", "beef bulgogi ramen", "modu ramen"],
+  }),
+];
+
 export default function BulgogiRamenJacksonville() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-  
+
   return (
     <main className="min-h-screen selection:bg-gold selection:text-charcoal pt-[104px] bg-charcoal">
+      <SchemaScripts schemas={schemas} />
       <Header />
       
       {/* Hero Section */}
@@ -99,7 +118,7 @@ export default function BulgogiRamenJacksonville() {
               Order for Pickup
             </a>
             <Link 
-              href="https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47" 
+              href="https://modu-waitlist.vercel.app/reserve" 
               target="_blank"
               className="px-8 py-3 rounded border border-gold text-gold hover:bg-gold/10 transition-colors tracking-wide"
             >

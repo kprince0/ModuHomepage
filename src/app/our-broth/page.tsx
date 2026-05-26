@@ -4,15 +4,33 @@ import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import SchemaScripts from "@/components/SchemaScripts";
+import { breadcrumbSchema, articleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "The Authentic 18-Hour Ramen Broth | Modu Ramen Jacksonville",
   description: "Learn why Modu Ramen's signature pork bone broth takes 18 hours to perfect. A dedication to authentic Japanese tonkotsu flavor in Jacksonville.",
 };
 
+const schemas = [
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Our 18-Hour Broth", url: "/our-broth" },
+  ]),
+  articleSchema({
+    slug: "our-broth",
+    headline: "The Authentic 18-Hour Ramen Broth",
+    description: "Why Modu Ramen's signature pork bone broth takes 18 hours to perfect — a dedication to authentic Japanese tonkotsu flavor in Jacksonville.",
+    image: "/images/18-hour-slow-cooked-ramen-broth-jacksonville.webp",
+    articleSection: "The Craft",
+    keywords: ["18 hour broth", "tonkotsu broth", "pork bone broth", "ramen broth jacksonville", "double boil"],
+  }),
+];
+
 export default function OurBroth() {
   return (
     <main className="min-h-screen selection:bg-gold selection:text-charcoal pt-[104px] bg-charcoal">
+      <SchemaScripts schemas={schemas} />
       <Header />
       
       {/* Hero Section */}
@@ -29,7 +47,7 @@ export default function OurBroth() {
         {/* Feature Image */}
         <div className="relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden mb-16 shadow-[0_0_40px_rgba(212,175,55,0.1)]">
           <Image
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Pork Bulgogi.png`}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/signature-pork-bulgogi-ramen-jacksonville.webp`}
             alt="Rich, creamy 18-hour pork bone broth at Modu Ramen"
             fill
             priority
@@ -91,7 +109,7 @@ export default function OurBroth() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47" 
+              href="https://modu-waitlist.vercel.app/reserve" 
               target="_blank" 
               rel="noopener noreferrer"
               className="px-8 py-4 bg-gold text-charcoal hover:bg-paper transition-colors duration-300 uppercase tracking-widest text-sm font-bold"

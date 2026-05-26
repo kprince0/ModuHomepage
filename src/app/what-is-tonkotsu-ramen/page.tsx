@@ -4,17 +4,36 @@ import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import SchemaScripts from "@/components/SchemaScripts";
+import { breadcrumbSchema, articleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "What is Tonkotsu Ramen? | Modu Ramen Guide",
   description: "Learn what makes Tonkotsu Ramen special. Discover the ingredients, history, and why the milky pork bone broth is a worldwide favorite. Brought to you by Modu Ramen.",
 };
 
+const schemas = [
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Blog", url: "/blog" },
+    { name: "What is Tonkotsu Ramen?", url: "/what-is-tonkotsu-ramen" },
+  ]),
+  articleSchema({
+    slug: "what-is-tonkotsu-ramen",
+    headline: "What is Tonkotsu Ramen?",
+    description: "Learn what makes Tonkotsu Ramen special: the ingredients, history, and why the milky pork bone broth is a worldwide favorite.",
+    image: "/images/menu/best-kimchi-tonkotsu-ramen-jacksonville.webp",
+    articleSection: "Ramen Culture",
+    keywords: ["tonkotsu ramen", "japanese ramen", "pork bone broth", "ramen guide", "modu ramen"],
+  }),
+];
+
 export default function WhatIsTonkotsuRamen() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-  
+
   return (
     <main className="min-h-screen selection:bg-gold selection:text-charcoal pt-[104px] bg-charcoal">
+      <SchemaScripts schemas={schemas} />
       <Header />
       
       {/* Hero Section */}
@@ -32,7 +51,7 @@ export default function WhatIsTonkotsuRamen() {
         {/* Feature Image */}
         <div className="relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden mb-16 shadow-[0_0_40px_rgba(212,175,55,0.1)]">
           <Image
-             src={`${basePath}/images/menu/Kimchi Tonkatsu.png`}
+             src={`${basePath}/images/menu/best-kimchi-tonkotsu-ramen-jacksonville.webp`}
             alt="Close up of a bowl of Tonkotsu Ramen showing the milky broth"
             fill
             priority

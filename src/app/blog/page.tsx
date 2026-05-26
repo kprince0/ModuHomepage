@@ -3,11 +3,27 @@ import Footer from "@/components/ui/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import SchemaScripts from "@/components/SchemaScripts";
+import { breadcrumbSchema, webPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Modu Ramen Journal | Jacksonville Ramen Guide",
   description: "Explore the Modu Ramen Journal. Discover the secrets of our 18-hour broth, the history of Tonkotsu ramen, and guides to the best ramen in Jacksonville.",
 };
+
+const schemas = [
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Blog", url: "/blog" },
+  ]),
+  webPageSchema({
+    slug: "blog",
+    name: "Modu Ramen Journal",
+    description: "Explore guides on the 18-hour broth, Tonkotsu ramen, and the best ramen in Jacksonville.",
+    image: "/images/Staff.png",
+    type: "CollectionPage",
+  }),
+];
 
 // Interface for blog posts
 interface BlogPost {
@@ -32,7 +48,7 @@ const POSTS: BlogPost[] = [
     title: "What is Tonkotsu Ramen?",
     excerpt: "Discover the secret behind the milky-white broth that makes Tonkotsu the most famous ramen in the world. Learn about the rigorous high-heat boiling process and essential ingredients.",
     href: "/what-is-tonkotsu-ramen",
-    imagePath: "/images/menu/Kimchi Tonkatsu.png",
+    imagePath: "/images/menu/best-kimchi-tonkotsu-ramen-jacksonville.webp",
     category: "Ramen Culture",
     date: "March 2024"
   },
@@ -40,7 +56,7 @@ const POSTS: BlogPost[] = [
     title: "Why 18-Hour Broth Tastes Better",
     excerpt: "At Modu Ramen, we believe that the only path to producing authentic, unforgettable flavor is through time, extreme heat, and patience. Go behind the scenes of our signature broth process.",
     href: "/why-18-hour-pork-bone-broth-tastes-better",
-    imagePath: "/images/Broth.jpg",
+    imagePath: "/images/18-hour-slow-cooked-ramen-broth-jacksonville.webp",
     category: "The Craft",
     date: "March 2024"
   },
@@ -48,7 +64,7 @@ const POSTS: BlogPost[] = [
     title: "The Best Spicy Ramen in Jacksonville",
     excerpt: "From the nutty, complex heat of our signature Tantanmen to the fiery bite of Spicy Tonkotsu, learn how we balance intense heat with deep, creamy savory flavors.",
     href: "/spicy-ramen-jacksonville",
-    imagePath: "/images/menu/TanTan.png",
+    imagePath: "/images/menu/creamy-tantanmen-ramen-jacksonville.webp",
     category: "Menu Spotlight",
     date: "March 2024"
   },
@@ -71,6 +87,7 @@ export default function BlogHub() {
 
   return (
     <main className="min-h-screen selection:bg-gold selection:text-charcoal pt-[104px] bg-charcoal">
+      <SchemaScripts schemas={schemas} />
       <Header />
       
       {/* Hero Section */}
@@ -167,7 +184,7 @@ export default function BlogHub() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47" 
+              href="https://modu-waitlist.vercel.app/reserve" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="bg-gold text-charcoal px-8 py-4 rounded hover:bg-paper transition-colors font-bold tracking-widest uppercase text-sm"

@@ -4,15 +4,34 @@ import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import SchemaScripts from "@/components/SchemaScripts";
+import { breadcrumbSchema, articleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Tantanmen Ramen in Jacksonville | Modu Ramen",
   description: "Experience the best Tantanmen ramen in Jacksonville at Modu Ramen. A perfect balance of fiery spice and rich, creamy sesame flavor topped with seasoned ground pork.",
 };
 
+const schemas = [
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Menu", url: "/digital-menu" },
+    { name: "Tantanmen", url: "/tantanmen-jacksonville" },
+  ]),
+  articleSchema({
+    slug: "tantanmen-jacksonville",
+    headline: "Best Tantanmen Ramen in Jacksonville",
+    description: "Perfect balance of fiery spice and rich creamy sesame flavor, topped with seasoned ground pork — Modu Ramen's signature tantanmen.",
+    image: "/images/menu/creamy-tantanmen-ramen-jacksonville.webp",
+    articleSection: "Menu Spotlight",
+    keywords: ["tantanmen jacksonville", "spicy sesame ramen", "ground pork ramen", "modu ramen"],
+  }),
+];
+
 export default function TantanmenJacksonville() {
   return (
     <main className="min-h-screen selection:bg-gold selection:text-charcoal pt-[104px] bg-charcoal">
+      <SchemaScripts schemas={schemas} />
       <Header />
       
       {/* Hero Section */}
@@ -29,7 +48,7 @@ export default function TantanmenJacksonville() {
         {/* Feature Image */}
         <div className="relative w-full h-[400px] md:h-[600px] rounded-lg overflow-hidden mb-16 shadow-[0_0_40px_rgba(212,175,55,0.1)]">
           <Image
-             src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/TanTan.png`}
+             src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/creamy-tantanmen-ramen-jacksonville.webp`}
             alt="Spicy Tantanmen at Modu Ramen in Jacksonville"
             fill
             priority
@@ -103,7 +122,7 @@ export default function TantanmenJacksonville() {
               Order Online
             </a>
             <a 
-              href="https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47" 
+              href="https://modu-waitlist.vercel.app/reserve" 
               target="_blank" 
               rel="noopener noreferrer"
               className="px-8 py-4 border border-gold text-gold hover:bg-gold hover:text-charcoal transition-colors duration-300 uppercase tracking-widest text-sm font-bold bg-charcoal/30"

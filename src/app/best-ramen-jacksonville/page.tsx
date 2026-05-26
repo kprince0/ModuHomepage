@@ -4,15 +4,34 @@ import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import SchemaScripts from "@/components/SchemaScripts";
+import { breadcrumbSchema, articleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Best Ramen in Jacksonville, FL | Modu Ramen",
   description: "If you are looking for the best ramen in Jacksonville, Modu Ramen serves authentic Japanese ramen with an 18-hour pork bone broth. Visit our Baymeadows location.",
 };
 
+const schemas = [
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Blog", url: "/blog" },
+    { name: "Best Ramen in Jacksonville", url: "/best-ramen-jacksonville" },
+  ]),
+  articleSchema({
+    slug: "best-ramen-jacksonville",
+    headline: "Best Ramen in Jacksonville, FL",
+    description: "Why Modu Ramen's 18-hour double-boiled pork bone broth and Chef Kim's 26-year mastery make us the premier destination for authentic Japanese ramen in Jacksonville.",
+    image: "/images/Staff.png",
+    articleSection: "Local Guide",
+    keywords: ["best ramen jacksonville", "japanese ramen jacksonville", "ramen baymeadows", "modu ramen"],
+  }),
+];
+
 export default function BestRamenJacksonville() {
   return (
     <main className="min-h-screen selection:bg-gold selection:text-charcoal pt-[104px] bg-charcoal">
+      <SchemaScripts schemas={schemas} />
       <Header />
       
       {/* Hero Section */}
@@ -103,7 +122,7 @@ export default function BestRamenJacksonville() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47" 
+              href="https://modu-waitlist.vercel.app/reserve" 
               target="_blank" 
               rel="noopener noreferrer"
               className="px-8 py-4 bg-gold text-charcoal hover:bg-paper transition-colors duration-300 uppercase tracking-widest text-sm font-bold"

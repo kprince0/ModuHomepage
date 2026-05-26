@@ -4,6 +4,8 @@ import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from 'next';
+import SchemaScripts from "@/components/SchemaScripts";
+import { breadcrumbSchema, articleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: 'Matcha Ramen in Jacksonville, FL | Modu Ramen',
@@ -13,9 +15,26 @@ export const metadata: Metadata = {
   },
 };
 
+const schemas = [
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Menu", url: "/digital-menu" },
+    { name: "Matcha Ramen", url: "/matcha-ramen-jacksonville" },
+  ]),
+  articleSchema({
+    slug: "matcha-ramen-jacksonville",
+    headline: "Matcha Ramen in Jacksonville, FL",
+    description: "Ceremonial Grade Matcha-infused soy broth with tender chashu, black garlic oil, and red ginger — a bright, herbaceous twist on traditional Japanese ramen.",
+    image: "/images/menu/unique-matcha-ramen-jacksonville.webp",
+    articleSection: "Menu Spotlight",
+    keywords: ["matcha ramen jacksonville", "ceremonial grade matcha", "unique ramen", "modu ramen"],
+  }),
+];
+
 export default function MatchaRamenPage() {
   return (
     <main className="min-h-screen bg-paper text-charcoal selection:bg-gold selection:text-charcoal bg-[#FDFBF7]">
+      <SchemaScripts schemas={schemas} />
       <Header />
       
       {/* Hero Section */}
@@ -47,7 +66,7 @@ export default function MatchaRamenPage() {
           <div className="md:w-1/2 relative w-full aspect-square">
             <div className="absolute inset-0 bg-gold/10 transform translate-x-4 translate-y-4 rounded-sm" />
             <Image 
-              src="/images/menu/matcha-ramen.jpg" 
+              src="/images/menu/unique-matcha-ramen-jacksonville.webp" 
               alt="Matcha Ramen at Modu Ramen Jacksonville" 
               fill
               className="object-cover rounded-sm border focus:outline-none focus:ring-2 focus:ring-gold"

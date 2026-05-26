@@ -1,6 +1,22 @@
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
 import Image from "next/image";
+import SchemaScripts from "@/components/SchemaScripts";
+import { breadcrumbSchema, webPageSchema } from "@/lib/schema";
+
+const schemas = [
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Menu", url: "/digital-menu" },
+  ]),
+  webPageSchema({
+    slug: "digital-menu",
+    name: "Modu Ramen Digital Menu",
+    description: "Complete menu of Modu Ramen — appetizers, signature tonkotsu ramen, Korean-Japanese fusion bowls, bingsu, and soju cocktails.",
+    image: "/images/menu/signature-pork-bulgogi-ramen-jacksonville.webp",
+    type: "ItemPage",
+  }),
+];
 
 type MenuItem = {
   name: string;
@@ -117,6 +133,7 @@ export default function DigitalMenu() {
 
   return (
     <main className="min-h-screen bg-charcoal selection:bg-gold selection:text-charcoal pt-[100px] md:pt-[120px] pb-12">
+      <SchemaScripts schemas={schemas} />
       <Header />
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16 mt-4">
@@ -150,7 +167,7 @@ export default function DigitalMenu() {
                       <div className="shrink-0 w-28 h-28 sm:w-36 sm:h-36 relative transition-transform duration-500 group-hover:scale-105 group-hover:rotate-2">
                         <Image
                           src={`${basePath}${item.image}`}
-                          alt={item.name}
+                          alt={`${item.name} at Modu Ramen Jacksonville - Authentic Japanese Cuisine`}
                           fill
                           className="object-contain"
                         />
@@ -178,7 +195,7 @@ export default function DigitalMenu() {
           <a href="https://moduramennzti.web.ordersave.com/menu" target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-5 bg-gold text-charcoal hover:bg-paper transition-all duration-300 uppercase tracking-widest text-sm font-bold shadow-lg shadow-gold/20 hover:shadow-gold/40 rounded-sm">
             Order Now
           </a>
-          <a href="https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47" target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-5 border border-gold text-gold hover:bg-gold hover:text-charcoal transition-all duration-300 uppercase tracking-widest text-sm font-bold shadow-lg shadow-transparent hover:shadow-gold/20 rounded-sm bg-charcoal/50">
+          <a href="https://modu-waitlist.vercel.app/reserve" target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-5 border border-gold text-gold hover:bg-gold hover:text-charcoal transition-all duration-300 uppercase tracking-widest text-sm font-bold shadow-lg shadow-transparent hover:shadow-gold/20 rounded-sm bg-charcoal/50">
             Reserve a Table
           </a>
         </div>

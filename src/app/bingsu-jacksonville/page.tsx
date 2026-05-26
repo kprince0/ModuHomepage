@@ -4,15 +4,34 @@ import RelatedPages from "@/components/ui/RelatedPages";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import SchemaScripts from "@/components/SchemaScripts";
+import { breadcrumbSchema, articleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Authentic Bingsu in Jacksonville | Modu Ramen",
   description: "Discover the best Bingsu in Jacksonville at Modu Ramen. Our Korean shaved ice desserts feature finely milled ice that melts in your mouth like snow.",
 };
 
+const schemas = [
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Menu", url: "/digital-menu" },
+    { name: "Bingsu", url: "/bingsu-jacksonville" },
+  ]),
+  articleSchema({
+    slug: "bingsu-jacksonville",
+    headline: "Authentic Bingsu in Jacksonville",
+    description: "Korean shaved ice desserts with finely milled ice that melts like snow — Mango Cheesecake and Tiramisu varieties at Modu Ramen.",
+    image: "/images/menu/Bingsu/Mango Bingsu.png",
+    articleSection: "Menu Spotlight",
+    keywords: ["bingsu jacksonville", "korean shaved ice", "mango bingsu", "tiramisu bingsu", "korean dessert"],
+  }),
+];
+
 export default function BingsuJacksonville() {
   return (
     <main className="min-h-screen selection:bg-gold selection:text-charcoal pt-[104px] bg-charcoal">
+      <SchemaScripts schemas={schemas} />
       <Header />
       
       {/* Hero Section */}
