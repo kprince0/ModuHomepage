@@ -1,9 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemaps-image/1.1">
+
   <url>
-    <loc>https://kprince0.github.io/ModuHomepage/</loc>
-    <lastmod>2026-03-06T00:00:00+00:00</lastmod>
+    <loc>https://moduramen.com/</loc>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://moduramen.com/images/menu/signature-pork-bulgogi-ramen-jacksonville.webp</image:loc>
+      <image:title>Modu Ramen Signature Bowl</image:title>
+    </image:image>
   </url>
+
+  <url>
+    <loc>https://moduramen.com/digital-menu</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://moduramen.com/blog</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://moduramen.com/chef-kim</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://moduramen.com/images/chef-kim-culinary-mastery-jacksonville.webp</image:loc>
+      <image:title>Chef Dongil Kim - 26 Years of Culinary Mastery</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://moduramen.com/our-broth</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://moduramen.com/images/18-hour-slow-cooked-ramen-broth-jacksonville.webp</image:loc>
+      <image:title>18-Hour Slow-Cooked Tonkotsu Broth</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://moduramen.com/best-ramen-jacksonville</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://moduramen.com/ramen-baymeadows-jacksonville</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://moduramen.com/tonkotsu-ramen-jacksonville</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://moduramen.com/bulgogi-ramen-jacksonville</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://moduramen.com/tantanmen-jacksonville</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://moduramen.com/matcha-ramen-jacksonville</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://moduramen.com/spicy-ramen-jacksonville</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://moduramen.com/bingsu-jacksonville</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://moduramen.com/bigboss-bulgogi-set</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://moduramen.com/what-is-tonkotsu-ramen</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://moduramen.com/why-18-hour-pork-bone-broth-tastes-better</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
