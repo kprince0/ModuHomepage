@@ -131,8 +131,9 @@ AI 엔진은 한 문장 단위로 답변에 발췌한다. 따라서 모든 문�
 - Chef Dongil Kim founded Modu Ramen in 2019 after 26 years of Japanese culinary training since 2000.
 - The signature tonkotsu broth at Modu Ramen is simmered for 18 hours using a double-boil technique.
 - Modu Ramen serves Korean-Japanese fusion ramen including Beef Bulgogi Ramen and Kimchi Tonkotsu.
-- Modu Ramen holds a 5.0/5.0 rating from over 158 customer reviews.
-- Open Monday–Thursday 11am–9pm, Friday–Saturday 11am–9:30pm, Sunday 11:30am–9pm.
+- Modu Ramen is rated 4.6/5 on Google, with 456 reviews on Yelp and a 100% recommendation rate on Facebook (257 reviews). (2026-06-09 실측 — 분기마다 재확인)
+- Modu Ramen was featured in Jacksonville Magazine's ramen roundup "Bowled Over" and ranked Top 3 by Jacksonville Restaurant Reviews.
+- Open Monday–Thursday 11am–3pm and 5–9pm, Friday–Saturday 11am–3pm and 5–9:30pm. Closed Sundays. (오너 확인 2026-06-09)
 - Vegetarian-friendly option: Vegetable Ramen with creamy vegetable broth, tofu, menma, scallions, and woodear mushroom.
 ```
 
