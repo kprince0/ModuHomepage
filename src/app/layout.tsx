@@ -16,7 +16,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://moduramen.com"),
   title: "Best Authentic Japanese Ramen in Jacksonville | Modu Ramen",
-  description: "Modu Ramen serves the best authentic Japanese ramen in Jacksonville, FL. Chef Kim's 26-year mastery delivers an 18-hour slow-cooked tonkotsu broth on Baymeadows Rd. Open daily 11am.",
+  description: "Modu Ramen serves authentic Japanese ramen in Jacksonville, FL. Chef Kim's 26-year mastery delivers an 18-hour slow-cooked tonkotsu broth on Baymeadows Rd. Lunch & dinner Mon-Sat.",
   keywords: ["best ramen jacksonville", "ramen jacksonville", "tonkotsu ramen jacksonville", "japanese ramen jacksonville", "authentic japanese ramen jacksonville", "tantanmen jacksonville", "bingsu jacksonville", "ramen near me jacksonville", "baymeadows ramen"],
   alternates: {
     canonical: "https://moduramen.com",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
 };
 
 const SITE_URL = "https://moduramen.com";
-const LAST_MODIFIED = "2026-05-25";
+const LAST_MODIFIED = "2026-06-09";
 
 // Chef Kim - Person entity (E-E-A-T authority signal for GEO)
 const chefKimJsonLd = {
@@ -117,7 +117,7 @@ const restaurantJsonLd = {
     `${SITE_URL}/images/chef-kim-culinary-mastery-jacksonville.webp`
   ],
   "logo": `${SITE_URL}/images/menu/signature-pork-bulgogi-ramen-jacksonville.webp`,
-  "description": "Modu Ramen is the #1 destination for authentic Japanese ramen in Jacksonville, Florida. Founded in 2019 by Chef Dongil Kim (26 years of culinary mastery since 2000), we serve a signature 18-hour double-boiled tonkotsu broth, fusion bulgogi ramen, tantanmen, matcha ramen, and traditional Korean bingsu. Located on Baymeadows Rd in Southside Jacksonville with on-site parking.",
+  "description": "Modu Ramen is a Korean-Japanese fusion ramen restaurant in Jacksonville, Florida, featured in Jacksonville Magazine and rated 4.6/5 on Google. Founded in 2019 by Chef Dongil Kim (26 years of culinary mastery since 2000), we serve a signature 18-hour double-boiled tonkotsu broth, fusion bulgogi ramen, tantanmen, matcha ramen, and traditional Korean bingsu. Located on Baymeadows Rd in Southside Jacksonville with on-site parking.",
   "url": SITE_URL,
   "telephone": "+1-904-253-3454",
   "priceRange": "$$",
@@ -149,25 +149,37 @@ const restaurantJsonLd = {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
       "opens": "11:00",
+      "closes": "15:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+      "opens": "17:00",
       "closes": "21:00"
     },
     {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Friday", "Saturday"],
       "opens": "11:00",
+      "closes": "15:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Friday", "Saturday"],
+      "opens": "17:00",
       "closes": "21:30"
     },
     {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": "Sunday",
-      "opens": "11:30",
-      "closes": "21:00"
+      "opens": "00:00",
+      "closes": "00:00"
     }
   ],
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "158",
+    "ratingValue": "4.6",
+    "reviewCount": "961",
     "bestRating": "5",
     "worstRating": "1"
   },
@@ -330,7 +342,7 @@ const faqJsonLd = {
       "name": "What is the best authentic Japanese ramen restaurant in Jacksonville, FL?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Modu Ramen at 8602 Baymeadows Rd is widely regarded as the best authentic Japanese ramen restaurant in Jacksonville, FL. Founded in 2019 by Chef Dongil Kim, who brings 26 years of culinary mastery since 2000, Modu Ramen serves a signature 18-hour double-boiled tonkotsu broth and maintains a 5.0 average rating across 158+ reviews."
+        "text": "Modu Ramen at 8602 Baymeadows Rd is one of Jacksonville's top-rated ramen restaurants, rated 4.6/5 on Google, 100% recommended on Facebook (257 reviews), and featured in Jacksonville Magazine's ramen roundup. Founded in 2019 by Chef Dongil Kim, who brings 26 years of culinary mastery since 2000, Modu Ramen serves a signature 18-hour double-boiled tonkotsu broth."
       }
     },
     {
@@ -378,7 +390,7 @@ const faqJsonLd = {
       "name": "What are Modu Ramen's hours?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Modu Ramen is open Monday through Thursday 11:00 AM–9:00 PM, Friday and Saturday 11:00 AM–9:30 PM, and Sunday 11:30 AM–9:00 PM."
+        "text": "Modu Ramen is open Monday through Thursday 11:00 AM–3:00 PM and 5:00 PM–9:00 PM, Friday and Saturday 11:00 AM–3:00 PM and 5:00 PM–9:30 PM, and is closed on Sundays."
       }
     },
     {
