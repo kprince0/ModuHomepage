@@ -23,7 +23,7 @@ export default function Header() {
 
       <div className="hidden md:flex items-center gap-4">
         <a 
-          href="https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47" 
+          href="https://modu-waitlist.vercel.app/reserve" 
           target="_blank" 
           rel="noopener noreferrer"
           className="px-6 py-2 bg-gold text-charcoal hover:bg-paper transition-colors duration-300 uppercase tracking-widest text-xs font-semibold"
@@ -65,7 +65,7 @@ export default function Header() {
 
         <div className="flex flex-col gap-4 mt-4 w-full px-10">
           <a 
-            href="https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47" 
+            href="https://modu-waitlist.vercel.app/reserve" 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-full py-4 bg-gold text-charcoal hover:bg-paper transition-colors duration-300 uppercase tracking-widest text-sm font-semibold text-center"

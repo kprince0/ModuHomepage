@@ -14,21 +14,21 @@ const POSTS: BlogPost[] = [
     title: "What is Tonkotsu Ramen?",
     excerpt: "Discover the secret behind the milky-white broth that makes Tonkotsu the most famous ramen in the world. It's all about the emulsion.",
     href: "/what-is-tonkotsu-ramen",
-    imagePath: "/images/menu/Kimchi Tonkatsu.png",
+    imagePath: "/images/menu/best-kimchi-tonkotsu-ramen-jacksonville.webp",
     category: "Ramen Guide"
   },
   {
     title: "Why 18-Hour Broth Tastes Better",
     excerpt: "At Modu Ramen, we believe that the only path to producing authentic, unforgettable flavor is through time, extreme heat, and patience.",
     href: "/why-18-hour-pork-bone-broth-tastes-better",
-    imagePath: "/images/Broth.jpg",
+    imagePath: "/images/18-hour-slow-cooked-ramen-broth-jacksonville.webp",
     category: "The Craft"
   },
   {
     title: "Jacksonville's Best Spicy Ramen",
     excerpt: "From the nutty, complex heat of our signature Tantanmen to the fiery bite of Spicy Tonkotsu, learn how we balance spice with deep savory flavors.",
     href: "/spicy-ramen-jacksonville",
-    imagePath: "/images/menu/TanTan.png",
+    imagePath: "/images/menu/creamy-tantanmen-ramen-jacksonville.webp",
     category: "Local Guide"
   }
 ];

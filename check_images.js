@@ -1,5 +1,5 @@
 const https = require('https');
-https.get('https://kprince0.github.io/ModuHomepage/', (res) => {
+https.get('https://moduramen.com/', (res) => {
   let data = '';
   res.on('data', d => data += d);
   res.on('end', () => {

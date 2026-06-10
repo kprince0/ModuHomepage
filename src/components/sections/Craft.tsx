@@ -35,8 +35,8 @@ export default function Craft() {
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm group">
             <div className="absolute inset-0 bg-black/20 z-10 group-hover:bg-transparent transition-colors duration-700" />
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/Broth.jpg`}
-              alt="The Awakening Broth - Authentic Japanese Ramen Process"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/18-hour-slow-cooked-ramen-broth-jacksonville.webp`}
+              alt="18-hour slow-cooked signature Tonkotsu broth process - Modu Ramen Jacksonville"
               fill
               className="object-cover transition-all duration-1000 scale-105 group-hover:scale-100"
             />
@@ -48,9 +48,9 @@ export default function Craft() {
           <div className="craft-text flex flex-col justify-center">
             <span className="text-gold tracking-[0.4em] uppercase text-xs font-bold mb-6 block">The Process</span>
 
-            <h2 className="text-5xl md:text-7xl font-serif mb-10 leading-tight">
+            <h3 className="text-5xl md:text-7xl font-serif mb-10 leading-tight">
               The <span className="text-gold italic">Awakening</span>
-            </h2>
+            </h3>
 
             <div className="w-16 h-px bg-gold/50 mb-10"></div>
 

@@ -109,7 +109,7 @@ export default async function Experience() {
       <div className="container mx-auto px-6 max-w-7xl">
         
         <div className="text-center mb-16">
-           <h2 className="text-4xl md:text-6xl font-serif mb-6">Guest Experience</h2>
+           <h3 className="text-4xl md:text-6xl font-serif mb-6">Guest Experience</h3>
            <p className="text-charcoal/70 font-light max-w-lg mx-auto">
              Don't just take our word for it. Hear from those who have experienced the true taste of Japan.
            </p>

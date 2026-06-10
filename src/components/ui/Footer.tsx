@@ -32,15 +32,15 @@ export default function Footer() {
             <ul className="text-sm flex flex-col gap-3 font-light">
               <li className="flex justify-between border-b border-paper/10 pb-2">
                 <span>Mon - Thu</span>
-                <span>11:00 AM - 9:00 PM</span>
+                <span>11 AM - 3 PM, 5 - 9 PM</span>
               </li>
               <li className="flex justify-between border-b border-paper/10 pb-2">
                 <span>Fri - Sat</span>
-                <span>11:00 AM - 9:30 PM</span>
+                <span>11 AM - 3 PM, 5 - 9:30 PM</span>
               </li>
               <li className="flex justify-between border-b border-paper/10 pb-2">
                 <span>Sunday</span>
-                <span>11:30 AM - 9:00 PM</span>
+                <span>Closed</span>
               </li>
               <li className="text-xs text-gold mt-2 italic">
                 * Ample parking available on-site
@@ -57,7 +57,7 @@ export default function Footer() {
                 Order Online
               </a>
               <a 
-                href="https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47" 
+                href="https://modu-waitlist.vercel.app/reserve" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full py-3 border border-gold text-gold text-center uppercase tracking-widest text-xs font-bold hover:bg-gold hover:text-charcoal transition-colors"

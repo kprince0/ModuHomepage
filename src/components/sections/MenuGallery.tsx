@@ -9,49 +9,49 @@ const menuItems = [
     category: "Fusion Ramen",
     name: "Beef Bulgogi Ramen",
     description: "A rich fusion masterpiece featuring our signature savory broth, topped with marinated beef bulgogi, a soft-boiled egg, and fresh bok choy for a complex umami profile.",
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Pork Bulgogi.png`
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/signature-pork-bulgogi-ramen-jacksonville.webp`
   },
   {
     category: "Fusion Ramen",
     name: "Matcha Ramen",
     description: "An innovative gastronomic creation: soy broth infused with Ceremonial Grade Matcha, tender chashu, black garlic oil, and red ginger.",
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/matcha-ramen.jpg`
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/unique-matcha-ramen-jacksonville.webp`
   },
   {
     category: "Entree",
     name: "BigBoss Beef Bulgogi Set",
     description: "A full pound of premium beef marinated in our house-made bulgogi sauce, delivering the pinnacle of umami in every bite.",
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/beef Bulgogi Set canva.png`
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/authentic-beef-bulgogi-set-jacksonville.webp`
   },
   {
     category: "Appetizer",
     name: "K.F.C Modu Wings",
     description: "Authentic Korean Fried Chicken wings, crispy fried to perfection and tossed in our chef's traditional spicy glaze.",
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/spicy modu wings.png`
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/korean-spicy-fried-chicken-wings-jacksonville.webp`
   },
   {
     category: "Classic Ramen",
     name: "Kimchi Tonkotsu",
     description: "Pork bone broth with chashu, soy marinated egg, black garlic oil, woodear mushroom, and nori seaweed.",
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Kimchi Tonkatsu.png`
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/best-kimchi-tonkotsu-ramen-jacksonville.webp`
   },
   {
     category: "Classic Ramen",
     name: "Curry Tonkatsu",
     description: "Pork bone broth with Fried Ton-Ka-Tsu, soy marinated egg, shiitake mushroom, corn, menma, and scallions.",
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/curry tonkatsu 1.jpg`
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/savory-curry-tonkotsu-ramen-jacksonville.webp`
   },
   {
     category: "Fusion Ramen",
     name: "TanTanMen",
     description: "Pork bone broth with ground pork, menma, black garlic oil, peanut, corn, and bok choy.",
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/TanTan.png`
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/creamy-tantanmen-ramen-jacksonville.webp`
   },
   {
     category: "Vegetarian",
     name: "Vegetable Ramen",
     description: "Creamy vegetable broth, tofu, menma, scallions, and woodear mushroom.",
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Veg.png`
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/healthy-vegetable-ramen-jacksonville.webp`
   },
   {
     category: "BingSu",
@@ -71,9 +71,9 @@ export default function MenuGallery() {
   return (
     <section id="menu" className="py-24 bg-charcoal text-paper">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-serif text-center mb-16">
+        <h3 className="text-4xl md:text-5xl font-serif text-center mb-16">
           Our <span className="text-gold">Artistry</span>
-        </h2>
+        </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16">
           {menuItems.map((item, index) => (
@@ -85,7 +85,7 @@ export default function MenuGallery() {
                       <div key={i} className="relative w-1/2 h-full">
                         <Image
                           src={img}
-                          alt={`${item.name} ${i + 1} - Best Ramen in Jacksonville`}
+                          alt={`${item.name} ${i + 1} - Authentic Japanese cuisine at Modu Ramen Jacksonville`}
                           fill
                           className={`transition-transform duration-700 opacity-90 group-hover:opacity-100 ${['BingSu', 'Soju Cocktail'].includes(item.category) ? 'object-contain p-2' : 'object-cover'} ${img.includes('sunrise') ? 'scale-[1.3] group-hover:scale-[1.35] translate-y-[10%]' : 'group-hover:scale-105'}`}
                         />
@@ -95,7 +95,7 @@ export default function MenuGallery() {
                 ) : (
                   <Image
                     src={item.image as string}
-                    alt={`${item.name} - Best Ramen in Jacksonville`}
+                    alt={`${item.name} - Signature dish at Modu Ramen, Jacksonville's best ramen spot`}
                     fill
                     className={`transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100 ${['BingSu', 'Soju Cocktail'].includes(item.category) ? 'object-contain p-4' : 'object-cover'}`}
                   />

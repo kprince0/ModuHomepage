@@ -36,8 +36,8 @@ export default function Heritage() {
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm group">
             <div className="absolute inset-0 bg-black/20 z-10 group-hover:bg-transparent transition-colors duration-700" />
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/chef-kim.jpg`}
-              alt="Chef Kim's culinary mastery - Best Ramen in Jacksonville"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/chef-kim-culinary-mastery-jacksonville.webp`}
+              alt="Modu Ramen Chef Kim's 26-year culinary mastery - Authentic Japanese Ramen in Jacksonville"
               fill
               className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
             />
@@ -49,7 +49,7 @@ export default function Heritage() {
           <div className="heritage-content flex flex-col justify-center">
             <span className="text-gold tracking-[0.4em] uppercase text-xs font-bold mb-4 block">The Chef&apos;s Journey</span>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-8 leading-tight">
-              A Quarter-Century of <br /> <span className="text-gold italic">Culinary Mastery</span>
+              18-Hour Slow-Cooked Authentic Tonkotsu Broth, <br /> <span className="text-gold italic">Chef Kim&apos;s 26-Year Culinary Journey</span>
             </h2>
 
             <p className="text-paper/80 mb-6 text-lg font-light leading-relaxed">

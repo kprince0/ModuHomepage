@@ -30,13 +30,31 @@ export default function Location() {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
         "opens": "11:00",
+        "closes": "15:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "17:00",
         "closes": "21:00"
       },
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Friday", "Saturday"],
         "opens": "11:00",
+        "closes": "15:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday", "Saturday"],
+        "opens": "17:00",
         "closes": "21:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "00:00",
+        "closes": "00:00"
       }
     ],
     "servesCuisine": "Japanese Ramen",
@@ -56,7 +74,7 @@ export default function Location() {
             {/* Info */}
             <div>
               <span className="text-gold tracking-[0.4em] uppercase text-xs font-bold mb-4 block">Plan Your Visit</span>
-              <h2 className="text-4xl md:text-5xl font-serif mb-12">A Gastronomic Destination</h2>
+              <h3 className="text-4xl md:text-5xl font-serif mb-12">A Gastronomic Destination</h3>
               
               <div className="space-y-8">
                 <div className="flex items-start gap-4">

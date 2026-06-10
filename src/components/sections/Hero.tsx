@@ -44,8 +44,8 @@ export default function Hero() {
       <div className="hero-bg absolute inset-0 z-0 bg-black">
         <div className="absolute inset-0 bg-charcoal/40 z-10" />
         <Image
-          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/Pork Bulgogi.png`}
-          alt="Authentic Japanese Ramen crafted by Chef Kim"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/menu/signature-pork-bulgogi-ramen-jacksonville.webp`}
+          alt="Modu Ramen's signature Tonkotsu Ramen with 18-hour broth - Best Japanese Ramen in Jacksonville"
           fill
           priority
           className="object-cover object-center scale-110 contrast-[1.05]"
@@ -59,7 +59,7 @@ export default function Hero() {
         </h2>
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-paper leading-[1.1] mb-10">
-          The Art of Authentic <br className="hidden md:block" /> Japanese Ramen.
+          The #1 Japanese <br className="hidden md:block" /> Ramen Destination in Jacksonville.
         </h1>
 
         {/* 셰프 경력과 식당 설립년도 구분 */}
@@ -75,7 +75,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center w-full max-w-sm mx-auto sm:max-w-none">
           <a 
-            href="https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AGD47" 
+            href="https://modu-waitlist.vercel.app/reserve" 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-full sm:w-auto px-8 py-4 bg-gold text-charcoal hover:bg-paper transition-colors duration-300 uppercase tracking-widest text-sm font-bold shadow-lg shadow-gold/20 text-center"

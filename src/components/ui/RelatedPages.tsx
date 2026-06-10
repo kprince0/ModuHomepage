@@ -18,19 +18,19 @@ const PAGES: RelatedPage[] = [
   {
     title: "Tonkotsu Ramen",
     href: "/tonkotsu-ramen-jacksonville",
-    imagePath: "/images/menu/Kimchi Tonkatsu.png",
+    imagePath: "/images/menu/best-kimchi-tonkotsu-ramen-jacksonville.webp",
     alt: "Authentic Tonkotsu Ramen"
   },
   {
     title: "Tantanmen Ramen",
     href: "/tantanmen-jacksonville",
-    imagePath: "/images/menu/TanTan.png",
+    imagePath: "/images/menu/creamy-tantanmen-ramen-jacksonville.webp",
     alt: "Spicy Tantanmen Ramen"
   },
   {
     title: "Matcha Ramen",
     href: "/matcha-ramen-jacksonville",
-    imagePath: "/images/menu/matcha-ramen.jpg",
+    imagePath: "/images/menu/unique-matcha-ramen-jacksonville.webp",
     alt: "Matcha Ramen Jacksonville"
   },
   {
