@@ -14,7 +14,7 @@ const REVIEWS = [
     id: 1,
     name: "Alex M.",
     platform: "Google Review",
-    text: "Undeniably the best authentic Japanese ramen in Jacksonville. The meticulous 24-hour pork bone broth and handcrafted noodles show a level of culinary mastery you'd expect from a fine dining establishment.",
+    text: "Undeniably the best authentic Japanese ramen in Jacksonville. The meticulous 18-hour pork bone broth and handcrafted noodles show a level of culinary mastery you'd expect from a fine dining establishment.",
     rating: 5
   },
   {

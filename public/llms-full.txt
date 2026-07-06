@@ -16,7 +16,7 @@ This file provides a comprehensive, AI-ingestion-friendly knowledge base about M
 - **Website:** https://moduramen.com
 - **Founded:** 2019
 - **Founder & Executive Chef:** Dongil Kim
-- **Aggregate Rating:** 4.6/5 Google (961 reviews); Yelp 456 reviews; Facebook 100% recommended (257 reviews); Restaurant Guru 4.9/5 (1,614 votes)
+- **Aggregate Rating:** 4.6/5 Google (961 reviews); Yelp 456 reviews; Facebook 100% recommended (257 reviews); Restaurant Guru 4.8/5 (1,600+ votes)
 - **Price Range:** $$ (moderate)
 - **Currencies:** USD
 - **Payment Methods:** Cash, Credit Card, Debit Card, Apple Pay, Google Pay

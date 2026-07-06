@@ -4,7 +4,7 @@
 
 export const SITE_URL = "https://moduramen.com";
 export const PUBLISHED_AT = "2024-03-15";
-export const MODIFIED_AT = "2026-05-25";
+export const MODIFIED_AT = "2026-07-06";
 
 const abs = (path: string) =>
   path.startsWith("http") ? path : `${SITE_URL}${path.startsWith("/") ? "" : "/"}${path}`;

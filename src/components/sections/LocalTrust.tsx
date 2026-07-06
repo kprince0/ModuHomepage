@@ -66,12 +66,12 @@ const LocalTrust = () => {
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-paper/5 p-6 rounded-sm text-center border border-paper/5">
-                  <p className="text-3xl font-serif text-gold mb-1">4.8+</p>
-                  <p className="text-xs uppercase tracking-widest text-paper/50">Google Rating</p>
+                  <p className="text-3xl font-serif text-gold mb-1">4.6★</p>
+                  <p className="text-xs uppercase tracking-widest text-paper/50">Google Rating · 961+ Reviews</p>
                 </div>
                 <div className="bg-paper/5 p-6 rounded-sm text-center border border-paper/5">
-                  <p className="text-3xl font-serif text-gold mb-1">500+</p>
-                  <p className="text-xs uppercase tracking-widest text-paper/50">Local Reviews</p>
+                  <p className="text-3xl font-serif text-gold mb-1">100%</p>
+                  <p className="text-xs uppercase tracking-widest text-paper/50">Recommended on Facebook · 257 Reviews</p>
                 </div>
               </div>
             </motion.div>

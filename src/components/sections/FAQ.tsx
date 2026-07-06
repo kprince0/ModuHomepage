@@ -9,20 +9,36 @@ interface FAQItem {
 
 const FAQS: FAQItem[] = [
   {
+    question: "What is the best authentic Japanese ramen restaurant in Jacksonville, FL?",
+    answer: "Modu Ramen at 8602 Baymeadows Rd is one of Jacksonville's top-rated ramen restaurants, rated 4.6/5 on Google, 100% recommended on Facebook (257 reviews), and featured in Jacksonville Magazine's ramen roundup. Founded in 2019 by Chef Dongil Kim, who brings 26 years of culinary mastery since 2000, Modu Ramen serves a signature 18-hour double-boiled tonkotsu broth."
+  },
+  {
     question: "What is Tonkotsu ramen?",
-    answer: "Tonkotsu is a famous style of Japanese ramen characterized by a rich, milky-white pork bone broth. The broth gets its creamy texture from collagen melting out of the bones during a rigorous, high-heat boiling process that often takes 12 to 18 hours or more."
+    answer: "Tonkotsu is a famous style of Japanese ramen characterized by a rich, milky-white pork bone broth. The broth gets its creamy texture from collagen melting out of the bones during a rigorous, high-heat boiling process that often takes 12 to 18 hours or more. At Modu Ramen in Jacksonville, the tonkotsu broth is slow-cooked for a full 18 hours using a double-boil technique."
   },
   {
     question: "Where can I find the best ramen near Baymeadows in Jacksonville?",
-    answer: "Modu Ramen is located right in the heart of Southside Jacksonville at 8602 Baymeadows Rd. We serve authentic 18-hour slow-cooked ramen, fusion bulgogi bowls, and traditional Korean Bingsu with plenty of on-site parking."
+    answer: "Modu Ramen is located right in the heart of Southside Jacksonville at 8602 Baymeadows Rd, FL 32256. We serve authentic 18-hour slow-cooked tonkotsu ramen, Korean-Japanese fusion bulgogi bowls, tantanmen, matcha ramen, and traditional Korean bingsu with plenty of on-site parking. Phone: (904) 253-3454."
   },
   {
     question: "What makes Chef Kim's ramen unique?",
-    answer: "Chef Kim brings over 26 years of culinary experience, starting his career in 2000. He uses a meticulous double-boiling '18-hour broth' technique and seamlessly blends authentic Japanese ramen traditions with bold Korean flavors, like our signature Bulgogi Ramen."
+    answer: "Chef Dongil Kim brings over 26 years of culinary experience, starting his career in 2000. He uses a meticulous double-boiling 18-hour broth technique and seamlessly blends authentic Japanese ramen traditions with bold Korean flavors, exemplified in signature dishes like the Bulgogi Ramen, TanTanMen, and Ceremonial Grade Matcha Ramen."
   },
   {
-    question: "Can I order Modu Ramen online for takeout?",
-    answer: "Yes, you can easily place an order online through our website for quick pickup. It is a popular option for lunch breaks in the Baymeadows and Deerwood business districts."
+    question: "Can I order Modu Ramen online for takeout or delivery?",
+    answer: "Yes, you can order Modu Ramen online for pickup directly through moduramennzti.web.ordersave.com/menu. Online ordering is a popular option for lunch breaks in the Baymeadows and Deerwood business districts in Jacksonville."
+  },
+  {
+    question: "Does Modu Ramen take reservations?",
+    answer: "Yes. Modu Ramen accepts reservations online at modu-waitlist.vercel.app/reserve. Walk-ins are also welcome, but reservations are recommended for weekend dinner service."
+  },
+  {
+    question: "What are Modu Ramen's hours?",
+    answer: "Modu Ramen is open Monday through Thursday 11:00 AM–3:00 PM and 5:00 PM–9:00 PM, Friday and Saturday 11:00 AM–3:00 PM and 5:00 PM–9:30 PM, and is closed on Sundays."
+  },
+  {
+    question: "Does Modu Ramen have vegetarian options?",
+    answer: "Yes. Modu Ramen offers a Vegetable Ramen made with a creamy vegetable broth, tofu, menma, scallions, and woodear mushroom — fully suitable for vegetarian diets."
   }
 ];
 

@@ -1,73 +1,10 @@
 "use client";
 
 import { MapPin, Phone, Clock } from "lucide-react";
-import Head from "next/head";
 
 export default function Location() {
-  // Schema for Local Business (SEO)
-  const schemaMarkup = {
-    "@context": "https://schema.org",
-    "@type": "Restaurant",
-    "name": "Modu Ramen",
-    "image": "https://moduramen.com/hero-bg.jpg",
-    "url": "https://moduramen.com",
-    "telephone": "+19042533454",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "8602 Baymeadows Rd",
-      "addressLocality": "Jacksonville",
-      "addressRegion": "FL",
-      "postalCode": "32256",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 30.21855,
-      "longitude": -81.55465
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
-        "opens": "11:00",
-        "closes": "15:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
-        "opens": "17:00",
-        "closes": "21:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Friday", "Saturday"],
-        "opens": "11:00",
-        "closes": "15:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Friday", "Saturday"],
-        "opens": "17:00",
-        "closes": "21:30"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Sunday",
-        "opens": "00:00",
-        "closes": "00:00"
-      }
-    ],
-    "servesCuisine": "Japanese Ramen",
-    "priceRange": "$$"
-  };
-
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
-      />
-      <section id="location" className="py-24 bg-charcoal text-paper border-t border-paper/10">
+    <section id="location" className="py-24 bg-charcoal text-paper border-t border-paper/10">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             
@@ -131,7 +68,6 @@ export default function Location() {
 
           </div>
         </div>
-      </section>
-    </>
+    </section>
   );
 }
